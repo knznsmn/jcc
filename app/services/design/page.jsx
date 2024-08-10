@@ -10,7 +10,7 @@ const Design = () => {
   return (
     <main>
       <section className={styles.container}>
-        <article>
+        <article className='gridlines'>
           <Heading title='Designing Your Website' />
         </article>
       

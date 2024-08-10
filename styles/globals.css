@@ -140,6 +140,10 @@ h1, h2, .gradient {
   animation: gradient 10s infinite;
 }
 
+.gridlines {
+  
+}
+
 /* Media Breakpoint*/
 @media (height > 360px) {
   main {
