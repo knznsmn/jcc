@@ -81,11 +81,14 @@ a:hover {
 a:active {
   text-decoration: none;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h2, h3, h4, h5, h6 {
   font-family: 'Abril Fatface', serif;
   text-transform: uppercase;
 }
 h1 {
+  font-family: 'Abril Fatface', serif;
+  text-transform: capitalize;
   margin: 2em;
   text-align: center;
   line-height: calc(var(--h1-size) * 1.2);

@@ -1,4 +1,4 @@
 .heading {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 3em;
 }
