@@ -8,17 +8,18 @@ const Nav = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <Link href="/">
-          <Image
-            className={styles.img}
-            src={logo}
-            alt="knznsmn home"
-          />
+        <Link href="/" className={styles.knznsmn}>
+          <i className='icon-knznsmn' alt='knznsmn logo'>
+            <span className='path1'></span>
+            <span className='path2'></span>
+            <span className='path3'></span>
+            <span className='path4'></span>
+          </i>
         </Link>
         <ul className={styles.menu}>
-          {/* <li><Link href="/projects">Projects</Link></li>
-          <li><Link href="/blog">Blog</Link></li>  */}
-          <li className='gradient-bleu'><Link href="/about">About</Link></li>
+          <Link href="/projects"><li>Projects</li></Link>
+          <Link href="/blog"><li>Blog</li></Link>
+          <Link href="/about"><li>About</li></Link>
         </ul>
       </nav>
     </header>

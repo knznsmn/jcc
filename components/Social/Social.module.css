@@ -3,11 +3,8 @@
   justify-content: end;
 }
 
-.social img {
+.social i {
   margin-left: 1em;
-  width: 1rem;
+  width: 2rem;
   transition: all .2s ease-in-out;
-}
-.social img:hover {
-  scale: 1.5;
 }

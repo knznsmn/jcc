@@ -25,23 +25,23 @@
 .email:before {
   content: "";
   background: linear-gradient(45deg,
-  hsl(160, 95%, 34%), 
-  hsl(190, 95%, 34%),
-  hsl(200, 95%, 34%),
-  hsl(190, 95%, 34%),
-  hsl(160, 95%, 34%)
+  var(--hue-teal), 
+  var(--hue-sole),
+  var(--hue-jcce),
+  var(--hue-sole),
+  var(--hue-teal)
   );
   position: absolute;
   top: -2px;
   left: -2px;
   background-size: 400%;
   z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glow 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
+  filter: blur(.25rem);
+  -webkit-filter: blur(.25rem);
+  width: calc(100% + .25rem);
+  height: calc(100% + .25rem);
+  animation: glow 10s linear infinite;
+  transition: opacity 0.5s ease-in-out;
   border-radius: 1em;
 }
 
@@ -54,7 +54,12 @@
   background: var(--hue-teal);
   left: 0;
   top: 0;
-  border-radius: 10px;
+  border-radius: 1rem;
+}
+
+.email:hover:after {
+  background: var(--hue-noir);
+  opacity: 0;
 }
 
 @keyframes glow {

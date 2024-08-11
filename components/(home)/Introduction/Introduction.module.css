@@ -23,10 +23,10 @@
   margin-bottom: 10em;
 }
 
-.left{
+.left {
   flex: 1.5;
 }
-.right{
+.right {
   flex: .5;
 }
 .right img {
@@ -39,7 +39,6 @@ p.pitch {
 .name {
   border-left: var(--hue-jaun) solid .1rem;
   padding-left: 1rem;
-  /* margin-left: -1.5rem; */
 }
 
 .pitch span:nth-child(4),
@@ -86,6 +85,10 @@ p.pitch {
   font-weight: 800;
   color: var(--hue-bleu);
   opacity: 1;
+}
+
+.arrow i {
+  font-size: 2rem;
 }
 .cta {
   margin: 3.5em;

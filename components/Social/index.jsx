@@ -16,9 +16,9 @@ const Social = () => {
   }
   return (
     <div className={styles.social}>
-      <Link href={href.github}><Image src={github} alt='Github' /></Link>
-      <Link href={href.linked}><Image src={linkedin} alt='LinkedIn' /></Link>
-      <Link href={href.instag}><Image src={instagram} alt='Instagram' /></Link>
+      <Link href={href.github}><i className='icon-github' alt='Github'></i></Link>
+      <Link href={href.linked}><i className='icon-linkedin' alt='LinkedIn'></i></Link>
+      <Link href={href.instag}><i className='icon-instagram' alt='Instagram'></i></Link>
     </div>
   )
 }
