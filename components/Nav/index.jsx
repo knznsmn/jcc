@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <Link href="/" className={styles.knznsmn}>
+        <Link href='/' className={styles.knznsmn}>
           <i className='icon-knznsmn' alt='knznsmn logo'>
             <span className='path1'></span>
             <span className='path2'></span>
@@ -17,9 +17,9 @@ const Nav = () => {
           </i>
         </Link>
         <ul className={styles.menu}>
-          <Link href="/projects"><li>Projects</li></Link>
-          <Link href="/blog"><li>Blog</li></Link>
-          <Link href="/about"><li>About</li></Link>
+          <Link href='/projects'><li>Projects</li></Link>
+          <Link href='/blog'><li>Blog</li></Link>
+          <Link href='/about'><li>About</li></Link>
         </ul>
       </nav>
     </header>
