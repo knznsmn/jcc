@@ -40,6 +40,7 @@ export default function Project() {
       </div>
 
       <div className={styles.summary}>
+        <h4>{activeIndex !== null ? icons[activeIndex].name: "Projects"}</h4>
         <p>{activeIndex !== null ? icons[activeIndex].summary : defaultSummary}</p>
       </div>
     </div>

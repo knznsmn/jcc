@@ -27,13 +27,12 @@ const Grille = () => {
 					<div>
 						<i className="icon-apache"></i>
 						<Link href="https://www.jccesar.com/blog/workflow" alt="Julius Cinco Cesar's résumé">
-							How To Write A Responsive Website
+							" How I Write A Responsive Website "
 						</Link>
 					</div>
 				</section>
 
 				<section className={styles.proje}>
-					<h4>Projects</h4>
 					<Projects />
 				</section>
 

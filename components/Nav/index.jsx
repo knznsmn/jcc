@@ -8,7 +8,8 @@ const Nav = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <Link href='/' className={styles.knznsmn}>
+       <div>
+         <Link href='/' className={styles.knznsmn}>
           <i className='icon-knznsmn' alt='knznsmn logo'>
             <span className='path1'></span>
             <span className='path2'></span>
@@ -16,6 +17,11 @@ const Nav = () => {
             <span className='path4'></span>
           </i>
         </Link>
+        <p className="gradient-teal">
+            Julius Cinco Cesar
+        </p>
+       </div>
+        
         <ul className={styles.menu}>
           <Link href='/projects'><li>Projects</li></Link>
           <Link href='/blog'><li>Blog</li></Link>

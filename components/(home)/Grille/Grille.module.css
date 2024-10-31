@@ -69,6 +69,9 @@ article.grille h4 {
   grid-area: resum;
   margin: 1rem;
 }
+.resum i {
+  font-size: 1.5rem;
+}
 .blogs {
   grid-area: blogs;
 }
@@ -118,7 +121,7 @@ article.grille h4 {
 }
 .socia a {
   margin: .25rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .socia i:hover {
   color: var(--hue-sole);
