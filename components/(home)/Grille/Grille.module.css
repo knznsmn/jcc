@@ -15,11 +15,17 @@ article.grille {
 }
 article.grille p {
   padding: 0;
+  text-align: center;
+}
+article.grille h4 {
+  margin-top: .5rem;
+  text-transform: none;
+  font-size: small;
 }
 
 .grille > section {
   margin: .25rem;
-  min-height: 5rem;
+  height: auto;
   border: 0.1rem var(--hue-sole) solid;
   border-radius: .35rem;
   text-align: center;
@@ -28,6 +34,16 @@ article.grille p {
 .grille > section:hover {
   border: 0.1rem var(--hue-teal) solid;
   background-color: var(--hue-alph);
+}
+.grille div {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.grille div i {
+  padding: .5rem .25rem;
 }
 
 .greet {
@@ -38,6 +54,13 @@ article.grille p {
 }
 .resum {
   grid-area: resum;
+  background-color: var(--hue-blan);
+}
+.resum a {
+  font-size: 5rem;
+}
+.resum a:hover {
+  color: var(--hue-vert);
 }
 .proje {
   grid-area: proje;
@@ -51,9 +74,18 @@ article.grille p {
 }
 .tools {
   grid-area: tools;
+  background-color: var(--hue-jaun);
+  border: 0.1rem var(--hue-blan) solid;
 }
 .socia {
   grid-area: socia;
+}
+.socia a {
+  margin: .25rem;
+  font-size: 1.5rem;
+}
+.socia i:hover {
+  color: var(--hue-sole);
 }
 .conta {
   grid-area: conta;
@@ -63,7 +95,7 @@ article.grille p {
   article.grille {
     margin: 0 auto;
     width: 60%;
-    height: 25vh;
+    min-height: 25vh;
     display: grid;
     grid-template-areas:
       'greet greet resum resum proje proje proje proje proje proje'
@@ -71,5 +103,9 @@ article.grille p {
       'socia socia socia socia works works works conta conta conta';
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 1fr);
+  }
+  .socia a {
+    margin: .25rem;
+    font-size: 2.5rem;
   }
 }

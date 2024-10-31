@@ -10,7 +10,7 @@
   --hue-vert: hsla(73, 53%, 48%, 1);
   --hue-jaun: hsla(50, 96%, 48%, 1);
   --hue-plum: hsla(11, 89%, 53%, 1);
-  --hue-alph: hsla(168, 41%, 57%, .3);
+  --hue-alph: hsla(168, 41%, 57%, .1);
 
 /* Fonts */
 font-size: 16px;
@@ -243,7 +243,7 @@ p {
 }
 
 /* Gradients */
-h1, h2, .gradient {
+h1, h2, h4,.gradient {
   user-select: none;
   background: linear-gradient(90deg,
   var(--hue-sole),
