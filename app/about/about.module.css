@@ -31,10 +31,16 @@
     display: grid;
     grid-template-areas:
       'header header'
+      'intro intro'
       'details self'
     }
     .container article:nth-child(1) {
       grid-area: header
+    }
+    .container article:nth-child(2) {
+      grid-area: intro;
+      width: 100%;
+      margin: 0 auto;
     }
     article.left {
       grid-area: details;

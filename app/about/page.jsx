@@ -4,6 +4,7 @@ import signature from '@public/hrafnkell/signature.svg';
 import moi from '@public/hrafnkell/moi.svg';
 import Heading from '@components/ui/Heading';
 import styles from './about.module.css';
+import Introduction from '@components/(home)/Introduction';
 
 export const metadata = {
   title: 'About Me | Julius C. Cesar',
@@ -15,6 +16,10 @@ export default function About() {
       <section className={styles.container}>
         <article>
           <Heading title='About Me' />
+        </article>
+
+        <article>
+          <Introduction />
         </article>
 
         <article className={styles.left}>
