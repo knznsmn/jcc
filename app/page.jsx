@@ -10,6 +10,9 @@ export const metadata = {
 export default function Home() {
   return (
       <main>
+        <article className={styles.home}>
+          <h1>JCC Creative Concepts</h1>
+        </article>
         <Grille />
       </main>
   );

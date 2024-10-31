@@ -4,13 +4,14 @@ article.grille {
   min-height: 75vh;
   display: grid;
   grid-template-areas:
-    'greet resum'
+    'greet blogs'
+    'resum blogs'
     'proje proje'
     'tools about'
     'works works'
     'socia conta';
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
   overflow-y: scroll;
 }
 article.grille p {
@@ -24,16 +25,28 @@ article.grille h4 {
 }
 
 .grille > section {
-  margin: .25rem;
+  margin: .5rem;
   height: auto;
   border: 0.1rem var(--hue-sole) solid;
   border-radius: .35rem;
   text-align: center;
   cursor: pointer;
+  background-position: center;
+  background-size: 1rem 1rem;
+  background-image:
+    linear-gradient(to right, var(--hue-alph) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--hue-alph) 1px, transparent 1px);
 }
 .grille > section:hover {
-  border: 0.1rem var(--hue-teal) solid;
+  border: 0.1rem var(--hue-teal) groove;
   background-color: var(--hue-alph);
+  color: var(--hue-vert);
+}
+.grille a {
+  color: var(--hue-jaun);
+}
+.grille a:hover {
+  color: var(--hue-teal);
 }
 .grille div {
   display: flex;
@@ -54,16 +67,31 @@ article.grille h4 {
 }
 .resum {
   grid-area: resum;
-  background-color: var(--hue-blan);
+  margin: 1rem;
+}
+.blogs {
+  grid-area: blogs;
+}
+.blogs i {
+  margin: .5rem;
+  font-size: 2rem;
+}
+.blogs a {
+  text-transform: none;
 }
 .resum a {
-  font-size: 5rem;
+  font-size: .75rem;
 }
 .resum a:hover {
   color: var(--hue-vert);
 }
 .proje {
   grid-area: proje;
+}
+.proje a {
+  margin: .2rem;
+  font-size: 1.2rem;
+  color: var(--hue-plum);
 }
 .about {
   grid-area: about;
@@ -74,8 +102,16 @@ article.grille h4 {
 }
 .tools {
   grid-area: tools;
-  background-color: var(--hue-jaun);
   border: 0.1rem var(--hue-blan) solid;
+  font-size: 1.2rem;
+}
+.tools:hover {
+  color: var(--hue-vert);
+}
+.tools i:hover {
+  color: var(--hue-plum);
+  font-size: .8rem;
+  border-top: 1px var(--hue-jaun) solid;
 }
 .socia {
   grid-area: socia;
@@ -98,14 +134,20 @@ article.grille h4 {
     min-height: 25vh;
     display: grid;
     grid-template-areas:
-      'greet greet resum resum proje proje proje proje proje proje'
+      'greet greet blogs blogs proje proje proje proje proje proje'
+      'resum resum blogs blogs proje proje proje proje proje proje'
       'about about about about works works works tools tools tools'
       'socia socia socia socia works works works conta conta conta';
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  .proje a {
+    margin: .2rem .5rem;
+    font-size: 1.2rem;
+    color: var(--hue-plum);
   }
   .socia a {
     margin: .25rem;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
