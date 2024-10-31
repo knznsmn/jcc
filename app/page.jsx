@@ -2,6 +2,7 @@
 import Hero from '@components/Hero'
 import styles from './page.module.css'
 import Introduction from '@components/(home)/Introduction';
+import Grille from '@components/(home)/Grille';
 
 export const metadata = {
   title: 'Home | Julius C. Cesar',
@@ -9,7 +10,7 @@ export const metadata = {
 export default function Home() {
   return (
       <main>
-        <Introduction />
+        <Grille />
       </main>
   );
 }

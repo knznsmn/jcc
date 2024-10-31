@@ -10,6 +10,7 @@
   --hue-vert: hsla(73, 53%, 48%, 1);
   --hue-jaun: hsla(50, 96%, 48%, 1);
   --hue-plum: hsla(11, 89%, 53%, 1);
+  --hue-alph: hsla(168, 41%, 57%, .3);
 
 /* Fonts */
 font-size: 16px;
@@ -283,10 +284,6 @@ h1, h2, .gradient {
   background-clip: text;
   color: transparent;
   animation: gradient 10s infinite;
-}
-
-.gridlines {
-  
 }
 
 /* Media Breakpoint*/

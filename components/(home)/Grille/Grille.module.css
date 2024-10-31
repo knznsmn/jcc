@@ -1,0 +1,75 @@
+article.grille {
+  margin: 0 auto;
+  width: 80vw;
+  min-height: 75vh;
+  display: grid;
+  grid-template-areas:
+    'greet resum'
+    'proje proje'
+    'tools about'
+    'works works'
+    'socia conta';
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  overflow-y: scroll;
+}
+article.grille p {
+  padding: 0;
+}
+
+.grille > section {
+  margin: .25rem;
+  min-height: 5rem;
+  border: 0.1rem var(--hue-sole) solid;
+  border-radius: .35rem;
+  text-align: center;
+  cursor: pointer;
+}
+.grille > section:hover {
+  border: 0.1rem var(--hue-teal) solid;
+  background-color: var(--hue-alph);
+}
+
+.greet {
+  grid-area: greet;
+}
+.greet p {
+  text-align: center;
+}
+.resum {
+  grid-area: resum;
+}
+.proje {
+  grid-area: proje;
+}
+.about {
+  grid-area: about;
+}
+.works {
+  grid-area: works;
+  overflow-y: scroll;
+}
+.tools {
+  grid-area: tools;
+}
+.socia {
+  grid-area: socia;
+}
+.conta {
+  grid-area: conta;
+}
+
+@media (width > 660px) {
+  article.grille {
+    margin: 0 auto;
+    width: 60%;
+    height: 25vh;
+    display: grid;
+    grid-template-areas:
+      'greet greet resum resum proje proje proje proje proje proje'
+      'about about about about works works works tools tools tools'
+      'socia socia socia socia works works works conta conta conta';
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
