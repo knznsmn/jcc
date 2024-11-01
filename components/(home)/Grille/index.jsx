@@ -1,17 +1,30 @@
 'use client'
 import Link from 'next/link'
+import {useState} from "react";
 import styles from './Grille.module.css'
 import Contact from '@components/Contact'
 import Projects from '@components/ui/Projects'
 
 const Grille = () => {
+	const [text, setText] = useState('A project in mind? Mail me!');
+
+    const handleClick = () => {
+
+      const email = 'mail@jccesar.com';
+      navigator.clipboard.writeText(email).then(() => {
+        
+        setText('Copied to clipboard!');
+      }).catch(err => {
+      console.error('Failed to copy email: ', err);
+      });
+    }
 
 	return (
 			<article className={styles.grille}>
 
 				<section className={styles.greet}>
-					<h2>Hi!</h2>
-					<p>I'm Julius</p>
+					<h2>Hi !</h2>
+					<p>—I'm Julius</p>
 				</section>
 
 				<section className={styles.resum}>
@@ -74,9 +87,9 @@ const Grille = () => {
 
 				<section className={styles.conta}>
 					<p>
-						Mail me!
+						{text}
 					</p>
-					<Contact />
+					<i className="icon-mail" onClick={handleClick}></i>
 				</section>
 
 			</article>

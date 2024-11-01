@@ -13,6 +13,11 @@ article.grille {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
   overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.article.grille::-webkit-scrollbar { 
+  display: none;
 }
 article.grille p {
   padding: 0;
@@ -62,15 +67,17 @@ article.grille h4 {
 .greet {
   grid-area: greet;
 }
+.greet h2 {
+  text-transform: none;
+}
 .greet p {
   text-align: center;
 }
 .resum {
   grid-area: resum;
-  margin: 1rem;
 }
 .resum i {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .blogs {
   grid-area: blogs;
@@ -102,6 +109,11 @@ article.grille h4 {
 .works {
   grid-area: works;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.works::-webkit-scrollbar { 
+  display: none;
 }
 .tools {
   grid-area: tools;
@@ -120,14 +132,23 @@ article.grille h4 {
   grid-area: socia;
 }
 .socia a {
-  margin: .25rem;
-  font-size: 1rem;
+  margin: .12rem;
+  font-size: .8rem;
 }
 .socia i:hover {
   color: var(--hue-sole);
 }
 .conta {
   grid-area: conta;
+  display: grid;
+  align-items: center;
+}
+.conta p {
+  line-height: .75rem;
+}
+.conta i {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 @media (width > 660px) {
@@ -139,8 +160,8 @@ article.grille h4 {
     grid-template-areas:
       'greet greet blogs blogs proje proje proje proje proje proje'
       'resum resum blogs blogs proje proje proje proje proje proje'
-      'about about about about works works works tools tools tools'
-      'socia socia socia socia works works works conta conta conta';
+      'about about about about works works works socia socia socia'
+      'tools tools tools tools works works works conta conta conta';
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, auto);
   }
@@ -151,6 +172,6 @@ article.grille h4 {
   }
   .socia a {
     margin: .25rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
