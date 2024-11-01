@@ -2,47 +2,65 @@ import { useState } from "react";
 import Image from "next/image";
 import styles from "./Projects.module.css"; // Optional CSS module for styling
 
-export default function Project() {
+export default function ProjectGrid() {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const icons = [
-    { name: "NSCP", src: "/projects/nscp.svg", summary: "National Structural Code Project.", link: "https://www.jimacons.com"},
-    { name: "50MM", src: "/projects/50mm.svg", summary: "Photography portfolio project.", link: "https://www.jccesar.com"},
-    { name: "AMHA", src: "/projects/amha.svg", summary: "A responsive hotel website.", link: "https://amha.jccesar.com"},
-    { name: "Herb Garden", src: "/projects/herb.svg", summary: "A website showcasing responsive design.", link: "https://www.jccesar.com"},
-    { name: "MJAJC", src: "/projects/mjajc.svg", summary: "Responsive blog for dumping thoughts.", link: "https://www.jccesar.com"},
-    { name: "Word Bride", src: "/projects/mjajc.svg", summary: "Responsive website written in JavaScript.", link: "https://www.jccesar.com"},
+    { name: "50MM Photography", src: "/projects/50mm.svg", summary: "Photography portfolio project", link: "https://50mm.jccesar.com"},
+    { name: "Herb Garden", src: "/projects/herb.svg", summary: "App for gardening enthusiasts", link: "https://herb.jccesar.com"},
+    { name: "AMHA", src: "/projects/amha.svg", summary: "A responsive React website", link: "https://amha.jccesar.com"},
+    { name: "NSCP 2015", src: "/projects/nscp.svg", summary: "Digitalized engineers' Bible.", link: "https://nscp.jccesar.com"},
   ];
 
-  const defaultSummary = "Explore some of the projects I’ve work on.";
+  const def = {
+    summ: "Explore some of the projects I’m working on.",
+    name: "Project"
+  };
+
+  const handleClick = (index) => {
+    setActiveIndex(index);
+  };
 
   return (
-    <div className={styles.container}>
-      <div className={styles.icon}>
+    <section className={styles.container}>
+      <div className={styles.icons}>
         {icons.map((icon, index) => (
-          <a
-              key={icon.name}
-              href={icon.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              onMouseEnter={() => setActiveIndex(index)}
-              onMouseLeave={() => setActiveIndex(null)}
-            >
-              <Image
-                src={icon.src}
-                alt={icon.name}
-                width={50}
-                height={50}
-                className={styles.icon}
-              />
-          </a>
+          <div
+            key={icon.name}
+            onClick={() => handleClick(index)}
+            className={styles.icon}
+          >
+            <Image
+              src={icon.src}
+              alt={icon.name}
+              width={50}
+              height={50}
+              className={styles.icon}
+            />
+          </div>
         ))}
       </div>
 
       <div className={styles.summary}>
-        <h4>{activeIndex !== null ? icons[activeIndex].name: "Projects"}</h4>
-        <p>{activeIndex !== null ? icons[activeIndex].summary : defaultSummary}</p>
+        {activeIndex !== null ? (
+          <>
+            <a
+              href={icons[activeIndex].link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.projectLink}
+            >
+              <h4>{icons[activeIndex].name}</h4>
+            </a>
+            <p>{icons[activeIndex].summary}</p>
+          </>
+        ) : (
+          <>
+            <h4>{def.name}</h4>
+            <p>{def.summ}</p>
+          </>
+        )}
       </div>
-    </div>
+    </section>
   );
 }
