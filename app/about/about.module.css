@@ -51,10 +51,10 @@
       width: 100%;
       margin: 0 auto;
     }
-    article.left {
+    .left {
       grid-area: details;
     }
-    article.right {
+    .right {
       grid-area: self;
     }
     .left section {
@@ -66,7 +66,7 @@
     .left img {
       margin: 0 2rem;
       float: right;
-      width: 15rem;
+      width: 10rem;
       height: auto;
     }
     .left h2 {
