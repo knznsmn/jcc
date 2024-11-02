@@ -9,12 +9,12 @@
   align-items: center;
   margin: 0.5em 1em;
 }
-.nav a:link {
+.nav a:link, .nom {
   font-size: small;
   text-decoration: none;
   text-transform: uppercase;
 }
-.nav a:hover {
+.nav a:hover, .nav .nom:hover {
   text-decoration: none;
   color: var(--hue-jaun);
   border-top: 1px var(--hue-sole) solid;
@@ -25,11 +25,11 @@
   position: relative;
   display: flex;
 }
-.nav div p {
+.nav .nom {
   position: absolute;
   visibility: hidden;
   text-transform: uppercase;
-  cursor: grabbing;
+  cursor: pointer;
 }
 .knznsmn span {
   font-size: 2rem;
@@ -50,16 +50,14 @@
     list-style: none;
 }
 @media (width > 660px) {
-  .nav div p {
-    width: 100%;
+  .nav .nom {
     margin: 0;
     display: flex;
     visibility: visible;
-    top: -.75rem;
+    top: .5rem;
     left: 2.5rem;
   }
-  .nav div p:hover {
-    width: 100%;
+  .nav .nom:hover {
     scale: 1;
   }
 }

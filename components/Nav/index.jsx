@@ -17,9 +17,9 @@ const Nav = () => {
             <span className='path4'></span>
           </i>
         </Link>
-        <p className="gradient-teal">
-            Julius Cinco Cesar
-        </p>
+        <Link href='/' className={styles.nom}>
+          Julius Cinco Cesar
+        </Link>
        </div>
         
         <ul className={styles.menu}>
