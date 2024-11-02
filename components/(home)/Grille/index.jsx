@@ -28,12 +28,10 @@ const Grille = () => {
 				</section>
 
 				<section className={styles.resum}>
-					<h4>My Résumé</h4>
-					<div>
-						<Link href="https://cv.jccesar.com" alt="Julius Cinco Cesar's résumé">
-							<i className='icon-clipboard'></i>
-						</Link>
-					</div>
+					<h4>Résumé:</h4>
+					<Link href="../fichiers/cv.pdf" alt="Julius Cinco Cesar's résumé" target="_blank">
+						<i className='icon-cv'></i>
+					</Link>
 				</section>
 
 				<section className={styles.blogs}>
@@ -42,6 +40,9 @@ const Grille = () => {
 						<Link href="https://www.jccesar.com/blog/workflow" alt="Julius Cinco Cesar's résumé">
 							" How I Write A Responsive Website "
 						</Link>
+					</div>
+					<div>
+						<i className="icon-devices"></i>
 					</div>
 				</section>
 
@@ -78,7 +79,7 @@ const Grille = () => {
 				<section className={styles.socia}>
 					<p>@knznsmn</p>
 					<div>
-						<Link href="https://www.facebook.com/knznsmn" target='_blank'><i className="icon-facebook"></i></Link>
+						{/*<Link href="https://www.facebook.com/knznsmn" target='_blank'><i className="icon-facebook"></i></Link>*/}
 						<Link href="https://www.linkedin.com/in/knznsmn" alt="LinkedIn profile" target="_blank"><i className="icon-linkedin"></i></Link>
 						<Link href="https://www.instagram.com/knznsmn" alt="Instagram profile" target="_blank"><i className="icon-instagram"></i></Link>
 						<Link href="https://www.twitter.com/knznsmn" alt="X profile" target="_blank"><i className="icon-twitter"></i></Link>

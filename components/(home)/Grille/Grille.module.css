@@ -66,8 +66,11 @@ article.grille h4 {
 
 .greet {
   grid-area: greet;
+  display: grid;
+  place-items: center;
 }
 .greet h2 {
+  font-size: 2rem;
   text-transform: none;
 }
 .greet p {
@@ -75,9 +78,20 @@ article.grille h4 {
 }
 .resum {
   grid-area: resum;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+.resum h4 {
+  margin-left: .75rem;
 }
 .resum i {
-  font-size: 1rem;
+  font-size: 2rem;
+  color: var(--hue-teal);
+}
+.resum i:hover {
+  color: var(--hue-sole);
+  scale: .9;
 }
 .blogs {
   grid-area: blogs;
