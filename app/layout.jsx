@@ -12,7 +12,7 @@ const abril = Abril_Fatface({
 const inter = Inter({ subsets: ["latin"] });
 const icons = localIcons({
   src: [{
-    path: '../public/fonts/icon.ttf',
+    path: '../public/fonts/Icon.ttf',
   }],
 });
 
