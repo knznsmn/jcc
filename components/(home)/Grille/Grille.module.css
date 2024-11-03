@@ -71,15 +71,14 @@ article.grille h4 {
   text-align: center;
 }
 .resum {
+  margin: .5rem;
   grid-area: resum;
-  display: grid;
-  place-items: center;
-  grid-template-columns: 1fr 1fr;
-}
-.resum h4 {
-  margin-left: .75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .resum i {
+  padding-top: 2rem;
   font-size: 2rem;
 }
 .blogs {
@@ -146,7 +145,7 @@ article.grille h4 {
 @media (width > 660px) {
   article.grille {
     margin: 0 auto;
-    width: 60%;
+    width: 80%;
     min-height: 25vh;
     display: grid;
     grid-template-areas:
