@@ -28,6 +28,9 @@ div.icons {
   text-align: center;
   font-size: 1rem;
 }
+.summary h4:hover {
+  scale: 1.2;
+}
 @media (width > 660px) {
   .icon img {
     width: 2.5rem;

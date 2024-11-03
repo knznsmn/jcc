@@ -33,11 +33,11 @@ font-size: 16px;
 /* Icons */
 @font-face {
   font-family: 'Icon';
-  src:  url('../public/fonts/Icon.eot');
-  src:  url('../public/fonts/Icon.eot#iefix') format('embedded-opentype'),
-    url('../public/fonts/Icon.ttf') format('truetype'),
-    url('../public/fonts/Icon.woff') format('woff'),
-    url('../public/fonts/Icon.svg#Icon') format('svg');
+  src:  url('/fonts/Icon.eot');
+  src:  url('/fonts/Icon.eot#iefix') format('embedded-opentype'),
+    url('/fonts/Icon.ttf') format('truetype'),
+    url('/fonts/Icon.woff') format('woff'),
+    url('/fonts/Icon.svg#Icon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -58,6 +58,12 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-mail:before {
+  content: "\e912";
+}
+.icon-sublimetext:before {
+  content: "\e911";
+}
 .icon-cv:before {
   content: "\e90e";
 }
@@ -132,9 +138,6 @@ i {
 .icon-spinner:before {
   content: "\e97a";
 }
-.icon-clipboard:before {
-  content: "\e9b8";
-}
 .icon-sun:before {
   content: "\e9d4";
 }
@@ -149,9 +152,6 @@ i {
 }
 .icon-terminal:before {
   content: "\ea81";
-}
-.icon-mail:before {
-  content: "\ea84";
 }
 .icon-facebook:before {
   content: "\ea91";
