@@ -48,6 +48,19 @@
 }
 .menu {
   display: flex;
+  user-select: none;
+  background-color: var(--hue-bleu);
+  color: var(--blue);
+  background: linear-gradient(45deg, 
+  hsl(160, 95%, 34%), 
+  hsl(190, 95%, 34%),
+  hsl(200, 95%, 34%),
+  hsl(190, 95%, 34%),
+  hsl(160, 95%, 34%)
+  ) 0% 0% / 200% 100% padding-box text;
+  opacity: 1;
+  -webkit-text-fill-color: transparent;
+  animation: 5s infinite rainbow;
 }
 .menu li {
     margin: 0.5rem;
