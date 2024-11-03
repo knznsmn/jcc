@@ -13,12 +13,20 @@
   font-size: small;
   text-decoration: none;
   text-transform: uppercase;
+  color: var(--hue-sole);
+}
+.nav a:visited {
+  color: var(--hue-jcce);
 }
 .nav a:hover, .nav .nom:hover {
   text-decoration: none;
   color: var(--hue-jaun);
   border-top: 1px var(--hue-sole) solid;
   scale: .8;
+}
+.nav a:active {
+  text-decoration: none;
+  color: var(--hue-plum);
 }
 .nav div {
   width: 100%;
@@ -33,10 +41,6 @@
 }
 .knznsmn span {
   font-size: 2rem;
-}
-
-.nav a:active {
-  text-decoration: none;
 }
 .img {
     width: 2rem;
