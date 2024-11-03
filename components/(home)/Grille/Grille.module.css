@@ -15,6 +15,7 @@ article.grille {
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  animation: fadein 1s ease-in-out;
 }
 .article.grille::-webkit-scrollbar { 
   display: none;
@@ -45,13 +46,6 @@ article.grille h4 {
 .grille > section:hover {
   border: 0.1rem var(--hue-teal) groove;
   background-color: var(--hue-alph);
-  color: var(--hue-vert);
-}
-.grille a {
-  color: var(--hue-jaun);
-}
-.grille a:hover {
-  color: var(--hue-teal);
 }
 .grille div {
   display: flex;
@@ -87,35 +81,22 @@ article.grille h4 {
 }
 .resum i {
   font-size: 2rem;
-  color: var(--hue-teal);
-}
-.resum i:hover {
-  color: var(--hue-sole);
-  scale: .9;
 }
 .blogs {
   grid-area: blogs;
+}
+.blogs a {
+  color: var(--hue-vert);
+}
+.blogs a:hover {
+  color: var(--hue-jaun);
 }
 .blogs i {
   margin: .5rem;
   font-size: 2rem;
 }
-.blogs a {
-  text-transform: none;
-}
-.resum a {
-  font-size: .75rem;
-}
-.resum a:hover {
-  color: var(--hue-vert);
-}
 .proje {
   grid-area: proje;
-}
-.proje a {
-  margin: .2rem;
-  font-size: 1.2rem;
-  color: var(--hue-plum);
 }
 .about {
   grid-area: about;
@@ -133,9 +114,7 @@ article.grille h4 {
   grid-area: tools;
   border: 0.1rem var(--hue-blan) solid;
   font-size: 1.2rem;
-}
-.tools:hover {
-  color: var(--hue-vert);
+  color: var(--hue-bleu);
 }
 .tools i:hover {
   color: var(--hue-plum);
@@ -144,13 +123,6 @@ article.grille h4 {
 }
 .socia {
   grid-area: socia;
-}
-.socia a {
-  margin: .12rem;
-  font-size: .8rem;
-}
-.socia i:hover {
-  color: var(--hue-sole);
 }
 .conta {
   grid-area: conta;
@@ -161,8 +133,13 @@ article.grille h4 {
   line-height: .75rem;
 }
 .conta i {
+  color: var(--hue-bleu);
   font-size: 1.2rem;
   margin-bottom: 1rem;
+}
+.conta i:hover {
+  color: var(--hue-jaun);
+  scale: 1.3;
 }
 
 @media (width > 660px) {
@@ -182,10 +159,19 @@ article.grille h4 {
   .proje a {
     margin: .2rem .5rem;
     font-size: 1.2rem;
-    color: var(--hue-plum);
   }
   .socia a {
     margin: .25rem;
     font-size: 1.25rem;
+  }
+}
+
+/* Keyframes */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
