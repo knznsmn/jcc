@@ -112,6 +112,7 @@ article.grille h4 {
 }
 .tools {
   grid-area: tools;
+  margin: .1rem auto;
   border: 0.1rem var(--hue-blan) solid;
   font-size: 1.2rem;
   color: var(--hue-bleu);

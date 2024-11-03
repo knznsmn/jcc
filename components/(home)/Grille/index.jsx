@@ -73,6 +73,7 @@ const Grille = () => {
 						<i className="icon-terminal"></i>
 						<i className="icon-git"></i>
 						<i className="icon-github"></i>
+						<i className="icon-sublimetext"></i>
 					</div>
 				</section>
 
