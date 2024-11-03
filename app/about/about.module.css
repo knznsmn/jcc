@@ -1,6 +1,5 @@
 .container {
   margin: 0 auto;
-  width: 80vw;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -8,36 +7,49 @@
   gap: 1rem;
 }
 
-.left, .right {
+.left {
   display: grid;
-  
+  width: 80%;
+  margin: auto;
+}
+.right {
+  width: 80%;
+  margin: 2rem auto;
+  --areasize: 5rem;
+  --gradient: #0000 90deg, var(--hue-alph) 0;
+  background: 
+    conic-gradient(from 90deg at .15rem .15rem,var(--gradient))
+     0 0/var(--areasize) var(--areasize),
+    conic-gradient(from 90deg at 1px 1px,var(--gradient))
+     0 0/calc(var(--areasize)/5) calc(var(--areasize)/5);
+     background-position: center;
 }
 .left section {
   border: 0.1rem var(--hue-sole) solid;
   border-radius: .5rem;
-  padding: .25rem;
-  margin: .25rem auto;
+  margin: 1rem auto;
 }
 .container h2, .container h3, .container p {
   padding: 1rem;
 }
 
 .left img {
-  margin: 0;
+  margin-right: 1rem;
   float: right;
   width: 7rem;
   height: auto;
 }
 .right img {
-  width: 10rem;
+  width: 50%;
   height: auto;
-  margin: 0 3rem;
   float: center;
 }
 
 @media (width > 660px) {
   .container {
+    width: 80%;
     display: grid;
+    grid-template-columns: .6fr .4fr;
     grid-template-areas:
       'header header'
       'intro intro'
@@ -53,30 +65,33 @@
     }
     .left {
       grid-area: details;
+      display: grid;
     }
     .right {
-      grid-area: self;
     }
     .left section {
+      width: 100%;
       border: 0.1rem var(--hue-sole) solid;
       border-radius: .5rem;
-      padding: 1rem;
       margin: .5rem auto;
     }
     .left img {
-      margin: 0 2rem;
+      margin-left: 2rem;
       float: right;
       width: 10rem;
       height: auto;
     }
-    .left h2 {
-      padding: 2rem;
+    .right img {
+      width: 100%;
+    }
+    /*.left h2 {
+      padding: 1rem;
     }
     .left h3 {
-      padding: 2rem;
+      padding: 1rem;
     }
     .left p {
       text-align: left;
-      padding: 2rem;
-    }
+      padding: 1rem;
+    }*/
 }

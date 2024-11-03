@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 const Moment = () => {
   
-  const [greeting, setGreeting] = useState('');
+  const [greeting, setGreeting] = useState('day');
 
   useEffect(() => {
     const hours = new Date().getHours();

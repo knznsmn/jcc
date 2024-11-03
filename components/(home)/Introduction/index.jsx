@@ -8,7 +8,7 @@ const Introduction = () => {
   return (
     <section className={styles.container}>
       <article>
-        <h1>Hi! I'm <span className={styles.name}>Julius</span>.</h1>
+        <h2>Hi! I'm <span className={styles.name}>Julius</span>.</h2>
       </article>
 
       <article className={styles.introduction}>

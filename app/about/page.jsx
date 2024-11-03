@@ -26,23 +26,23 @@ export default function About() {
         <article className={styles.left}>
           <section>
             <h3>Hi there!</h3>
-            <p>Good <Moment />. I'm Julius Cinco Cesar. I love learning and creating stuff.</p>
+            <p>Good <Moment />. I'm Julius Cinco Cesar. I love learning and creating things. I spend my free time coding and reading books on science and philosophy.</p>
             <Image src={signature} alt="Signature" />
           </section>
 
           <section> 
             <h2>I Volunteer!</h2>
             <p>
-              I’m on a mission to gain hands-on experience and give back to the community through volunteering. If you’re passionate about creating positive change and have a volunteer opportunity that needs enthusiastic support, I’m all ears! Let’s connect and make a meaningful impact together.
+              I’m eager to gain hands-on experience and give back through volunteering. If you have an opportunity to create positive change, let’s connect and make an impact together!
             </p>
           </section>
         </article>
 
-      <article className={styles.right}>
-        <section>
-          <Image src={moi} alt="Knznsmn with his fuel." />
-        </section>
-      </article>
+        <article className={styles.right}>
+          <section>
+            <Image src={moi} alt="Knznsmn with his fuel." />
+          </section>
+        </article>
       </section>
     </main>
   );
