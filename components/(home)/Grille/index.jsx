@@ -41,8 +41,7 @@ const Grille = () => {
 
 				<section className={styles.blogs}>
 					<Link href="https://www.jccesar.com/blog/workflow" alt="Julius Cinco Cesar's résumé">
-						<i className="icon-apache"></i>
-						<p>How I Write A Responsive Website</p>
+						<blockquote>How I Write A Responsive Website</blockquote>
 						<i className="icon-devices"></i>
 					</Link>
 				</section>
@@ -53,10 +52,18 @@ const Grille = () => {
 
 				<section className={styles.about}>
 					<h4>More About Me</h4>
+					<p>
+						I’m currently working in hospitality and studying CS. I’m also exploring Godot for fun.
+					</p>
 				</section>
 
 				<section className={styles.works}>
 					<h4>Works</h4>
+					<div>
+						<Link href="/skills/design" alt="Design"><h5>Design</h5></Link>
+						<Link href="/skills/develop" alt="Develop"><h5>Develop</h5></Link>
+						<Link href="/skills/deploy" alt="Deploy"><h5>Deploy</h5></Link>
+					</div>
 				</section>
 
 				<section className={styles.tools}>

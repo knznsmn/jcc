@@ -1,7 +1,7 @@
 article.grille {
   margin: 0 auto;
   width: 90%;
-  max-height: 60vh;
+  max-height: 75vh;
   display: grid;
   grid-template-areas:
     'greet blogs'
@@ -23,6 +23,7 @@ article.grille {
 article.grille p {
   padding: 0;
   text-align: center;
+  line-height: 1rem;
 }
 article.grille h4 {
   margin-top: .5rem;
@@ -57,8 +58,24 @@ article.grille h4 {
 .grille div i {
   padding: .5rem .25rem;
 }
-.grille p {
+.grille blockquote {
+  padding-top: 1rem;
   line-height: 1rem;
+  position: relative;
+}
+.grille blockquote:before {
+  content: open-quote;
+  position: absolute;
+  font-size: 2.5rem;
+  top: .25rem;
+  left: 1rem;
+}
+.grille blockquote:after {
+  position: absolute;
+  content: close-quote;
+  font-size: 2.5rem;
+  bottom: -2.25rem;
+  right: 1rem;
 }
 
 .greet {
@@ -67,22 +84,22 @@ article.grille h4 {
   place-items: center;
 }
 .greet h2 {
-  font-size: 100%;
+  font-size: 150%;
   text-transform: none;
 }
 .greet p {
   text-align: center;
 }
 .resum {
-  padding: .25rem;
+  padding: 1rem;
   grid-area: resum;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .resum i {
-  padding-top: 2rem;
   font-size: 1.3rem;
+  padding: .25rem;
 }
 .blogs {
   grid-area: blogs;
@@ -92,7 +109,11 @@ article.grille h4 {
 }
 .blogs a {
   margin: .5rem;
+  height: 75%;
   color: var(--hue-vert);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .blogs a:hover {
   color: var(--hue-jaun);
@@ -108,14 +129,21 @@ article.grille h4 {
 .about {
   grid-area: about;
 }
+.about p {
+  text-align: left;
+}
 .works {
   grid-area: works;
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  padding: 0 2rem;
 }
 .works::-webkit-scrollbar { 
   display: none;
+}
+.works p {
+  
 }
 .tools {
   grid-area: tools;
@@ -137,12 +165,9 @@ article.grille h4 {
   flex-direction: column;
   justify-content: center;
 }
-.conta p {
-  line-height: .75rem;
-}
 .conta i {
   color: var(--hue-bleu);
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 .conta i:hover {
@@ -163,6 +188,12 @@ article.grille h4 {
       'tools tools tools tools works works works conta conta conta';
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, auto);
+  }
+  .greet h2 {
+    font-size: 150%;
+  }
+  .blogs a {
+    margin-top: 1.5rem;
   }
   .proje a {
     margin: .2rem .5rem;
