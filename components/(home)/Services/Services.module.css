@@ -24,7 +24,7 @@ ul.services {
 .services li a:link {
   font-size: small;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: none;
   color: white;
   transition: all .2s ease-in-out;
 }
