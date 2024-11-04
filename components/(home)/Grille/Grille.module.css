@@ -119,9 +119,8 @@ article.grille h4 {
 }
 .tools {
   grid-area: tools;
-  margin: .1rem auto;
   border: 0.1rem var(--hue-blan) solid;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--hue-bleu);
 }
 .tools i:hover {
@@ -172,6 +171,9 @@ article.grille h4 {
   .socia a {
     margin: .25rem;
     font-size: 1.25rem;
+  }
+  .tools i {
+    font-size: 1.2rem;
   }
 }
 

@@ -36,18 +36,17 @@ html {
 /* Icons */
 @font-face {
   font-family: 'Icon';
-  src:  url('/fonts/Icon.eot?y27mus');
-  src:  url('/fonts/Icon.eot?y27mus#iefix') format('embedded-opentype'),
-    url('/fonts/Icon.ttf?y27mus') format('truetype'),
-    url('/fonts/Icon.woff?y27mus') format('woff'),
-    url('/fonts/Icon.svg?y27mus#Icon') format('svg');
+  src:  url('/fonts/Icon.eot?zbxifq');
+  src:  url('/fonts/Icon.eot?zbxifq#iefix') format('embedded-opentype'),
+    url('/fonts/Icon.ttf?zbxifq') format('truetype'),
+    url('/fonts/Icon.woff?zbxifq') format('woff'),
+    url('/fonts/Icon.svg?zbxifq#Icon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
 i {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'Icon' !important;
   speak: never;
   font-style: normal;
@@ -61,6 +60,9 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-adobeaftereffects:before {
+  content: "\e916";
+}
 .icon-debian:before {
   content: "\e912";
 }
@@ -240,7 +242,7 @@ a:link {
 }
 a:visited {
   text-decoration: none;
-  color: var(--hue-jcce);
+  color: var(--hue-plum);
 }
 a:hover {
   text-decoration: none;

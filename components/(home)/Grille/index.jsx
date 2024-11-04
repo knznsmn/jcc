@@ -69,7 +69,7 @@ const Grille = () => {
 						<i className="icon-nginx"></i>
 						<i className="icon-adobephotoshop"></i>
 						<i className="icon-adobeillustrator"></i>
-						<i className="icon-adobepremiere"></i>
+						<i className="icon-adobeaftereffects"></i>
 						<i className="icon-terminal"></i>
 						<i className="icon-git"></i>
 						<i className="icon-github"></i>
