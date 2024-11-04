@@ -1,7 +1,7 @@
 article.grille {
   margin: 0 auto;
-  width: 80vw;
-  min-height: 75vh;
+  width: 90%;
+  max-height: 60vh;
   display: grid;
   grid-template-areas:
     'greet blogs'
@@ -57,6 +57,9 @@ article.grille h4 {
 .grille div i {
   padding: .5rem .25rem;
 }
+.grille p {
+  line-height: 1rem;
+}
 
 .greet {
   grid-area: greet;
@@ -64,31 +67,36 @@ article.grille h4 {
   place-items: center;
 }
 .greet h2 {
-  font-size: 2rem;
+  font-size: 100%;
   text-transform: none;
 }
 .greet p {
   text-align: center;
 }
 .resum {
-  margin: .5rem;
+  padding: .25rem;
   grid-area: resum;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .resum i {
   padding-top: 2rem;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 .blogs {
   grid-area: blogs;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .blogs a {
+  margin: .5rem;
   color: var(--hue-vert);
 }
 .blogs a:hover {
   color: var(--hue-jaun);
+  scale: .8;
 }
 .blogs i {
   margin: .5rem;
@@ -126,15 +134,16 @@ article.grille h4 {
 }
 .conta {
   grid-area: conta;
-  display: grid;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .conta p {
   line-height: .75rem;
 }
 .conta i {
   color: var(--hue-bleu);
-  font-size: 1.2rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 .conta i:hover {

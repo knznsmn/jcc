@@ -36,11 +36,11 @@ html {
 /* Icons */
 @font-face {
   font-family: 'Icon';
-  src:  url('/fonts/Icon.eot');
-  src:  url('/fonts/Icon.eot#iefix') format('embedded-opentype'),
-    url('/fonts/Icon.ttf') format('truetype'),
-    url('/fonts/Icon.woff') format('woff'),
-    url('/fonts/Icon.svg#Icon') format('svg');
+  src:  url('/fonts/Icon.eot?y27mus');
+  src:  url('/fonts/Icon.eot?y27mus#iefix') format('embedded-opentype'),
+    url('/fonts/Icon.ttf?y27mus') format('truetype'),
+    url('/fonts/Icon.woff?y27mus') format('woff'),
+    url('/fonts/Icon.svg?y27mus#Icon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -61,8 +61,11 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail:before {
+.icon-debian:before {
   content: "\e912";
+}
+.icon-elementary:before {
+  content: "\e913";
 }
 .icon-sublimetext:before {
   content: "\e911";
@@ -120,6 +123,9 @@ i {
 .icon-arrow:before {
   content: "\e90c";
 }
+.icon-speaker_notes:before {
+  content: "\e914";
+}
 .icon-devices:before {
   content: "\e910";
 }
@@ -150,7 +156,7 @@ i {
 .icon-embed:before {
   content: "\ea7f";
 }
-.icon-embed2:before {
+.icon-code:before {
   content: "\ea80";
 }
 .icon-terminal:before {
@@ -180,6 +186,15 @@ i {
 .icon-git:before {
   content: "\eae7";
 }
+.icon-pencil:before {
+  content: "\e915";
+}
+.icon-mail:before {
+  content: "\e945";
+}
+.icon-web:before {
+  content: "\e9c9";
+}
 .icon-linux:before {
   content: "\e900";
 }
@@ -201,7 +216,6 @@ i {
 .container::-webkit-scrollbar {
     display: none;
 }
-
 body {
   font-family: 'Inter', sans-serif;
   color: var(--hue-blan);
@@ -365,3 +379,4 @@ h1, h2, h4,.gradient {
     opacity: 1;
   }
 }
+

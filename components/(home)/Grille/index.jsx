@@ -28,22 +28,23 @@ const Grille = () => {
 				</section>
 
 				<section className={styles.resum}>
-					<h4>PDF:</h4>
 					<Link href="../fichiers/cv.pdf" alt="Julius Cinco Cesar's résumé" target="_blank">
 						<i className='icon-cv'></i>
+					</Link>
+					<Link href="https://cv.jccesar.com" alt="Julius C. Cesar's online résumé" target="_blank">
+						<i className='icon-web'></i>
+					</Link>
+					<Link href="/blog/workplace" alt="Workplace and Flow" target="_blank">
+						<i className='icon-works'></i>
 					</Link>
 				</section>
 
 				<section className={styles.blogs}>
-					<div>
+					<Link href="https://www.jccesar.com/blog/workflow" alt="Julius Cinco Cesar's résumé">
 						<i className="icon-apache"></i>
-						<Link href="https://www.jccesar.com/blog/workflow" alt="Julius Cinco Cesar's résumé">
-							" How I Write A Responsive Website "
-						</Link>
-					</div>
-					<div>
+						<p>How I Write A Responsive Website</p>
 						<i className="icon-devices"></i>
-					</div>
+					</Link>
 				</section>
 
 				<section className={styles.proje}>
@@ -66,7 +67,6 @@ const Grille = () => {
 						<i className="icon-css"></i>
 						<i className="icon-javascript"></i>
 						<i className="icon-nginx"></i>
-						<i className="icon-apache"></i>
 						<i className="icon-adobephotoshop"></i>
 						<i className="icon-adobeillustrator"></i>
 						<i className="icon-adobepremiere"></i>
