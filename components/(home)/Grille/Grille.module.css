@@ -1,7 +1,7 @@
 article.grille {
   margin: 0 auto;
   width: 90%;
-  max-height: 75vh;
+  max-height: 100vh;
   display: grid;
   grid-template-areas:
     'greet blogs'
@@ -104,8 +104,8 @@ article.grille h4 {
 .blogs {
   grid-area: blogs;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .blogs a {
   margin: .5rem;
@@ -120,8 +120,11 @@ article.grille h4 {
   scale: .8;
 }
 .blogs i {
-  margin: .5rem;
+  margin: 2rem auto;
   font-size: 2rem;
+}
+.blogs blockquote {
+  margin: 0 2rem;
 }
 .proje {
   grid-area: proje;
@@ -134,16 +137,13 @@ article.grille h4 {
 }
 .works {
   grid-area: works;
-  overflow-y: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
   padding: 0 2rem;
 }
-.works::-webkit-scrollbar { 
-  display: none;
+.works > div {
+  height: 100%;
 }
 .works p {
-  
+
 }
 .tools {
   grid-area: tools;

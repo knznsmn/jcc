@@ -60,9 +60,15 @@ const Grille = () => {
 				<section className={styles.works}>
 					<h4>Works</h4>
 					<div>
-						<Link href="/skills/design" alt="Design"><h5>Design</h5></Link>
-						<Link href="/skills/develop" alt="Develop"><h5>Develop</h5></Link>
-						<Link href="/skills/deploy" alt="Deploy"><h5>Deploy</h5></Link>
+						<div>
+							<Link href="/skills/design" alt="Design"><h5>Design</h5></Link>
+						</div>
+						<div>
+							<Link href="/skills/develop" alt="Develop"><h5>Develop</h5></Link>
+						</div>
+						<div>
+							<Link href="/skills/deploy" alt="Deploy"><h5>Deploy</h5></Link>
+						</div>
 					</div>
 				</section>
 
