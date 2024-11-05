@@ -6,7 +6,7 @@ const Dualism = ({h2, p, svg, alt}) => {
     <section className={styles.container}>
       <article className="left">
         <h2>{h2 ? h2 : 'A section heading here'}</h2>
-        <p>{p ? p : 'A paragraph is supposed to be rendered here but the motherfucker have forgotten.'}
+        <p>{p ? p : 'A paragraph is supposed to be rendered here.'}
         </p>
       </article>
 			

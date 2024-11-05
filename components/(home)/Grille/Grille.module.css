@@ -1,7 +1,7 @@
 article.grille {
   margin: 0 auto;
   width: 90%;
-  max-height: 100vh;
+  height: 100%;
   display: grid;
   grid-template-areas:
     'greet blogs'
