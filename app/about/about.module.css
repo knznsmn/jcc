@@ -39,6 +39,9 @@
   width: 7rem;
   height: auto;
 }
+.left section p:nth-child(odd) {
+  opacity: .5;
+}
 .right img {
   width: 50%;
   height: auto;
