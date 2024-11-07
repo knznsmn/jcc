@@ -13,7 +13,7 @@
   --hue-alph: hsla(168, 41%, 57%, .1);
 
 /* Fonts */
-font-size: 14px;
+font-size: 15px;
   --font-serf: 'Abril Fatface';
   --font-sans: 'Inter';
   --font-mono: 'Courier New';
@@ -263,7 +263,6 @@ h1 {
   margin: 2em;
   text-align: center;
   line-height: calc(var(--h1-size) * 1.2);
-  letter-spacing: -20%;
 }
 p {
   font-family: 'Inter', sans-serif;

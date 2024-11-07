@@ -1,4 +1,9 @@
 .heading {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
   text-transform: capitalize;
   font-size: 3em;
 }
