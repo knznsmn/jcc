@@ -31,7 +31,7 @@ const Grille = () => {
 					<Link href="../fichiers/cv.pdf" alt="Julius Cinco Cesar's résumé" target="_blank">
 						<i className='icon-cv'></i>
 					</Link>
-					<Link href="https://cv.jccesar.com" alt="Julius C. Cesar's online résumé" target="_blank">
+					<Link href="#" alt="Julius C. Cesar's online résumé" target="_blank">
 						<i className='icon-web'></i>
 					</Link>
 					<Link href="/blog/workplace" alt="Workplace and Flow" target="_blank">

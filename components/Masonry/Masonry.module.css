@@ -1,0 +1,61 @@
+.masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 16px;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.item {
+  position: relative;
+  break-inside: avoid;
+  overflow: hidden;
+}
+
+.image {
+  filter: saturate(0);
+  transition: all 2s ease-in-out;
+  cursor: pointer;
+}
+
+.image:hover {
+  filter: hue-rotate(0deg) blur(0);
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: hsla(73, 53%, 5%, 0.5);
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.overlay:hover {
+  background: var(--hue-vert);
+  color: var(--hue-bleu);
+  transition: all .3s ease-in-out;
+}
+
+.heading {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+}
+
+.description {
+  margin: 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--hue-bleu);
+}
+
+@media (max-width: 41rem) {
+  .masonry {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+  }
+}

@@ -9,25 +9,6 @@
   align-items: center;
   margin: 0.5em 1em;
 }
-.nav a:link, .nom {
-  font-size: small;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--hue-sole);
-}
-.nav a:visited {
-  color: var(--hue-jcce);
-}
-.nav a:hover, .nav .nom:hover {
-  text-decoration: none;
-  color: var(--hue-jaun);
-  border-top: 1px var(--hue-sole) solid;
-  scale: .8;
-}
-.nav a:active {
-  text-decoration: none;
-  color: var(--hue-plum);
-}
 .nav div {
   width: 100%;
   position: relative;
@@ -39,6 +20,26 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+.nav a:link {
+  font-size: small;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--hue-sole);
+}
+.nav a:visited {
+  color: var(--hue-jcce);
+}
+.nav a:hover {
+  text-decoration: none;
+  color: var(--hue-jaun);
+  border-top: 1px var(--hue-sole) solid;
+  scale: .8;
+}
+.nav a:active, .menu a:active {
+  text-decoration: none;
+  color: var(--hue-plum);
+}
+
 .knznsmn span {
   font-size: 2rem;
 }
@@ -60,7 +61,7 @@
   ) 0% 0% / 200% 100% padding-box text;
   opacity: 1;
   -webkit-text-fill-color: transparent;
-  animation: 5s infinite rainbow;
+  animation: 15s infinite rainbow;
 }
 .menu li {
     margin: 0.5rem;
@@ -76,5 +77,14 @@
   }
   .nav .nom:hover {
     scale: .9;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0 center;
+  }
+  100% {
+    background-position: 200% center;
   }
 }

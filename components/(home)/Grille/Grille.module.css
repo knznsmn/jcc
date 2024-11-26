@@ -12,8 +12,6 @@ article.grille {
     'socia conta';
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
-  overflow-y: scroll;
-  -ms-overflow-style: none;
   scrollbar-width: none;
   animation: fadein 1s ease-in-out;
 }
