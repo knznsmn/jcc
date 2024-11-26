@@ -7,6 +7,10 @@
   margin-top: 20px;
   animation: fadein 1s ease-in-out;
 }
+.portfolio h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
 
 @keyframes fadein {
   from {

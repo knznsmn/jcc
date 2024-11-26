@@ -8,25 +8,43 @@ const items = [
     alt: 'Card Gen',
     heading: 'Card Gen',
     description: 'Presentation & Print',
-    link: '/projects/cards'
+    link: '#'
   },
   { src: '/portfolio/masonry/50mm.jpg',
     alt: 'Photography Website',
     heading: '50mm Lens',
-    description: 'Photography & Responsive Design',
-    link: '/projects/50mm'
+    description: 'Photography & Responsive Website',
+    link: 'https://50mm.jccesar.com'
   },
     { src: '/portfolio/masonry/mjajc.jpg',
     alt: 'Logo Design',
-    heading: 'MJAJC',
+    heading: 'Graphics',
     description: 'Logo Design & Branding',
     link: '#'
+  },
+  { src: '/portfolio/masonry/creation.jpg',
+    alt: 'Composition',
+    heading: 'Composition',
+  description: 'Collage & Digital Art',
+    link: '/projects/branding'
   },
   { src: '/portfolio/masonry/poster.jpg',
     alt: 'Poster Design',
     heading: 'Branding',
-    description: 'A branding design for a client project.',
-    link: '/projects/branding'
+    description: 'Poster Design',
+    link: '#'
+  },
+  { src: '/portfolio/masonry/cards-responsive.jpg',
+    alt: 'Responsive Web Design',
+    heading: 'Web Design',
+    description: 'Responsive Web Design',
+    link: 'https://amha.jccesar.com'
+  },
+  { src: '/portfolio/masonry/cover.jpg',
+    alt: 'Social media cover design',
+    heading: 'Social Media',
+    description: 'Cover Design',
+    link: '#'
   },
 
 ];

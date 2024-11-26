@@ -34,13 +34,13 @@ const Grille = () => {
 					<Link href="#" alt="Julius C. Cesar's online résumé" target="_blank">
 						<i className='icon-web'></i>
 					</Link>
-					<Link href="/blog/workplace" alt="Workplace and Flow" target="_blank">
+					<Link href="/" alt="Workplace and Flow" target="_blank">
 						<i className='icon-works'></i>
 					</Link>
 				</section>
 
 				<section className={styles.blogs}>
-					<Link href="https://www.jccesar.com/blog/workflow" alt="Julius Cinco Cesar's résumé">
+					<Link href="/" alt="Julius Cinco Cesar's résumé">
 						<blockquote>How I Write A Responsive Website</blockquote>
 						<i className="icon-devices"></i>
 					</Link>

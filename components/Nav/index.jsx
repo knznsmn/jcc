@@ -24,7 +24,7 @@ const Nav = () => {
         
         <ul className={styles.menu}>
           <Link href='/portfolio'><li>Portfolio</li></Link>
-          <Link href='/blog'><li>Blog</li></Link>
+          <Link href='#'><li>Blog</li></Link>
           <Link href='/about'><li>About</li></Link>
         </ul>
       </nav>
