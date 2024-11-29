@@ -54,7 +54,7 @@ const Portfolio = () => {
     <main>
       <article className={styles.portfolio}>
         <h1>Portfolio</h1>
-        <p className={styles.lead}>Graphic Design/Web Development</p>
+        <p className={styles.lead}>Graphic Design / Web Development</p>
         <Masonry items={items} />
       </article>
     </main>
