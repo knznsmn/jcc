@@ -28,7 +28,7 @@ const Grille = () => {
 				</section>
 
 				<section className={styles.resum}>
-					<Link href="../fichiers/cv.pdf" alt="Julius Cinco Cesar's résumé" target="_blank">
+					<Link href="../fichiers/Resume-Julius-Cinco-Cesar.pdf" alt="Julius Cinco Cesar's résumé" target="_blank">
 						<i className='icon-cv'></i>
 					</Link>
 					<Link href="#" alt="Julius C. Cesar's online résumé" target="_blank">

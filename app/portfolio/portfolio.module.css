@@ -9,7 +9,11 @@
 }
 .portfolio h1 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+}
+.portfolio p.lead {
+  font-size: 1.2rem;
+  margin: 0 auto 2rem;
+  opacity: .5;
 }
 
 @keyframes fadein {
