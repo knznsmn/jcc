@@ -159,6 +159,10 @@ main {
 }
 @media (prefers-color-scheme: dark) {
   :root {
+    --neu-h: 0;
+    --neu-s: 0%;
+    --neu-l: 20%;
+    --neu-a: .25;
     --background: var(--hue-noire);
     --foreground: var(--hue-blach);
   }

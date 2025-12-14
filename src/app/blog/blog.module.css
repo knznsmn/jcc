@@ -1,0 +1,21 @@
+.list li {
+    display: flex;
+}
+.list li .date {
+    margin-right: 1rem; 
+}
+.list a {
+    font-weight: bold;
+    margin-right: 1rem;
+    text-transform: capitalize;
+}
+.list a::before {
+    content: "—";
+    margin: 0 0.5rem;
+}
+.list a::after {
+    content: ".";
+}
+.list .excerpt {
+    font-style: italic;
+}
