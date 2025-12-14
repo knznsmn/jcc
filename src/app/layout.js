@@ -1,14 +1,15 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { JetBrains_Mono, Special_Elite } from "next/font/google";
+import "@/style/globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const jetBrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const specialElite = Special_Elite({
+  variable: "--font-special-elite",
   subsets: ["latin"],
+  weight: ["400"]
 });
 
 export const metadata = {
@@ -18,8 +19,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html className={`${jetBrainsMono.variable} ${specialElite.variable}`} lang="en">
+      <body>
         {children}
       </body>
     </html>

@@ -1,0 +1,75 @@
+{
+	"website": {
+		"title": "JCC",
+		"description": "'s digital concepts and multimedia projects.",
+		"tagline": "Design. Develop. Deploy.",
+		"footer": "All rights reserved."
+	},
+
+	"author": {
+		"name": "knznsmn",
+		"email": "mail@jccesar.com",
+		"location": "Abu Dhabi, United Arab Emirates",
+		"social": [
+            {   "name": "twitter",
+                "icon": "icons/twitter.svg",
+                "link": "https://twitter.com/knznsmn"
+            },
+            {   "name": "instagram",
+                "icon": "icons/instagram.svg",
+                "link": "https://www.instagram.com/knznsmn/"
+            },
+            {   "name": "facebook",
+                "icon": "icons/facebook.svg",
+                "link": "https://www.facebook.com/knznsmn"
+            },
+            {   "name": "linkedin",
+                "icon": "icons/linkedin.svg",
+                "link": "https://www.linkedin.com/in/knznsmn"
+            },
+            {   "name": "github",
+                "icon": "icons/github.svg",
+                "link": "https://github.com/knznsmn"
+            }
+        ]
+	},
+
+	"navigation": [
+		{ "label": "Home", "link": "/" },
+		{ "label": "Portfolio", "link": "/portfolio" },
+		{ "label": "Blog", "link": "/blog" },
+		{ "label": "Notes", "link": "/notes" }
+	],
+
+	"projects": [
+
+    {   "title": "Yaban Restaurant",
+        "name": "yaban",
+        "logo": "/images/projects/yaban/logo.png",
+        "previewImage": "/images/projects/yaban.png",
+        "link": "/projects/yaban",
+        "description": "Japanese restaurant website redesign."
+    },
+    {   "title": "Maftuha",
+        "name": "maftuha",
+        "logo": "/images/projects/maftuha/logo.png",
+        "previewImage": "/images/projects/maftuha.png",
+        "link": "/projects/maftuha",
+        "description": "Personal library of digital books."
+    },
+    {   "title": "DERM",
+        "name": "derm",
+        "logo": "/images/projects/derm/logo.svg",
+        "previewImage": "/images/projects/derm.png",
+        "link": "/projects/derm",
+        "description": "Digitalized engineering reference manual."
+    },
+    {   "title": "Amha",
+        "name": "amha",
+        "logo": "/images/projects/amha/logo.png",
+        "previewImage": "/images/projects/amha.png",
+        "link": "/projects/amha",
+        "description": "Amha Mediterranean hotel website project."
+    }
+	]
+}
