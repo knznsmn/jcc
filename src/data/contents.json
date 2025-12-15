@@ -71,5 +71,9 @@
         "link": "/projects/amha",
         "description": "Amha Mediterranean hotel website project."
     }
-	]
+	],
+    "notes": {
+        "categories": ["tools", "webdev", "gamedev", "programming","design"],
+        "tags": ["c", "java", "python", "javascript", "unix"]
+    }
 }

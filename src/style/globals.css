@@ -72,11 +72,101 @@ i {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-portfolio:before {
+  content: "\e907";
+}
+.icon-home:before {
+  content: "\e908";
+}
+.icon-quill:before {
+  content: "\e909";
+}
+.icon-location:before {
+  content: "\e948";
+}
+.icon-display:before {
+  content: "\e956";
+}
+.icon-laptop:before {
+  content: "\e957";
+}
+.icon-iphone:before {
+  content: "\e958";
+}
+.icon-ipad:before {
+  content: "\e959";
+}
+.icon-quotes-left:before {
+  content: "\e977";
+}
+.icon-quotes-right:before {
+  content: "\e978";
+}
+.icon-spinner:before {
+  content: "\e97b";
+}
+.icon-leaf:before {
+  content: "\e9a4";
+}
+.icon-attachment:before {
+  content: "\e9cd";
+}
+.icon-contrast:before {
+  content: "\e9d5";
+}
+.icon-lumiere:before {
+  content: "\ea54";
+}
+.icon-sombre:before {
+  content: "\ea55";
+}
+.icon-code-open:before {
+  content: "\ea7f";
+}
+.icon-code-close:before {
+  content: "\ea80";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-spotify:before {
+  content: "\ea94";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-behance:before {
+  content: "\eaa9";
+}
+.icon-steam:before {
+  content: "\eaac";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-blogger:before {
+  content: "\eab7";
+}
+.icon-finder:before {
+  content: "\eabf";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-pinterest:before {
+  content: "\ead2";
+}
+.icon-git:before {
+  content: "\eae7";
+}
+.icon-copy:before {
+  content: "\e906";
+}
 .icon-derm:before {
   content: "\e902";
 }
@@ -89,33 +179,61 @@ i {
 .icon-yaban:before {
   content: "\e905";
 }
+.icon-react:before {
+  content: "\e90a";
+}
+.icon-adobeindesign:before {
+  content: "\e90b";
+}
+.icon-adobeillustrator:before {
+  content: "\e90c";
+}
+.icon-adobephotoshop:before {
+  content: "\e90d";
+}
+.icon-linux:before {
+  content: "\e90e";
+}
+.icon-codecademy:before {
+  content: "\e90f";
+}
+.icon-visualstudiocode:before {
+  content: "\e910";
+}
+.icon-python:before {
+  content: "\e911";
+}
+.icon-lua:before {
+  content: "\e912";
+}
+.icon-c:before {
+  content: "\e913";
+}
+.icon-html5:before {
+  content: "\e914";
+}
+.icon-css3:before {
+  content: "\e915";
+}
+.icon-javascript:before {
+  content: "\e916";
+}
+.icon-java:before {
+  content: "\e917";
+}
+.icon-godotengine:before {
+  content: "\e918";
+}
+.icon-debian:before {
+  content: "\e919";
+}
 .icon-facebook:before {
   content: "\e900";
 }
 .icon-x:before {
   content: "\e901";
 }
-.icon-quotes-left:before {
-  content: "\e977";
-}
-.icon-quotes-right:before {
-  content: "\e978";
-}
-.icon-lumiere:before {
-  content: "\ea54";
-}
-.icon-sombre:before {
-  content: "\ea55";
-}
-.icon-instagram:before {
-  content: "\ea92";
-}
-.icon-github:before {
-  content: "\eab0";
-}
-.icon-linkedin:before {
-  content: "\eac9";
-}
+
 
 /* Defaults */
 html,

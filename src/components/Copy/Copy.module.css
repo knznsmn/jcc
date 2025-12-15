@@ -1,0 +1,29 @@
+.copyButton {
+  position: absolute;
+  top: 0.5rem;
+  color: var(--background);
+  border: none;
+  right: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  z-index: 1000;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  background: var(--foreground);
+  opacity: 0;
+}
+
+.copyButton:hover {
+  opacity: 0.8;
+}
+
+.codeBlock:hover .copyButton {
+  opacity: 1;
+}
+
+.codeBlock {
+  position: relative;
+}

@@ -4,6 +4,7 @@ import styles from "../blog.module.css";
 import mdStyles from "./md.module.css";
 import Social from "@/components/Social";
 import Header from "@/components/Header";
+import CodeBlockCopy from "@/components/Copy";
 import contents from "@/data/contents.json";
 
 export async function generateStaticParams() {
@@ -29,6 +30,7 @@ export default async function PostPage({ params }) {
       </section>
         </article>
       <Social />
+      <CodeBlockCopy />
     </main>
   );
 }
