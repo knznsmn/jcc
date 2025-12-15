@@ -1,14 +1,9 @@
 ---
 title: "Second Post"
-date: "2025-12-10"
-excerpt: "Notes about the second post."
+date: "2025-12-15"
+excerpt: "Thoughts about how to organize the whole website thing."
 ---
 
-This is another sample post to demonstrate listing and routing.
+I'm debating myself on how to organize this project. I'm planning to use the /posts for ideas not related to coding. All coding stuff should go to /notes.
 
-- Bulleted
-- Code
-
-```js
-console.log('hello');
-```
+I think I'm going to go with that.
