@@ -271,6 +271,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: var(--font-jetbrains-mono), Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-special-elite), Georgia, serif;
