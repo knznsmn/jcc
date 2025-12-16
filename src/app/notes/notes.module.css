@@ -1,13 +1,48 @@
- .title { font-size: 2rem; margin-bottom: 1rem; }
- .sectionTitle { font-size: 1.2rem; margin: 1rem 0; }
- .categories { margin-bottom: 1.5rem; }
- .categoryList { display: flex; gap: .5rem; flex-wrap: wrap; list-style: none; padding: 0; }
- .categoryItem { background: #f3f3f3; border-radius: .4rem; padding: .25rem .6rem; }
- .group { margin: 1rem 0; }
- .groupTitle { font-size: 1rem; margin: .5rem 0; color: #555; }
- .list { list-style: none; padding: 0; }
- .item { margin: .25rem 0; }
- .tags { margin-left: .5rem; color: #888; font-size: .9rem; }
- .empty { color: #888; }
- .meta { color: #666; font-size: .9rem; }
- .category { margin-right: .5rem; }
+ .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+ .sectionTitle {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+ .categories {
+    margin-bottom: 1.5rem;
+}
+ .categoryList {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+ .categoryItem {
+    border-radius: .4rem;
+    padding: .25rem .6rem;
+}
+ .group {
+    margin: 1rem 0;
+}
+ .groupTitle {
+    font-size: 1rem;
+    margin: .5rem 0;
+}
+ .list {
+    list-style: none;
+    padding: 0;
+}
+ .item {
+    margin: .25rem 0;
+}
+ .tags {
+    margin-left: .5rem;
+    font-size: .9rem;
+}
+ .empty {
+}
+ .meta {
+    font-size: .9rem;
+}
+ .category {
+    margin-right: .5rem;
+}

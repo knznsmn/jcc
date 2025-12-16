@@ -15,7 +15,7 @@ const specialElite = Special_Elite({
 
 export const metadata = {
   title: contents.website.title || "JCC",
-  description: contents.website.description ||  "Digital concepts and multimedia contents.",
+  description: `${contents.author.name} ${contents.website.description}` ||  "Digital concepts and multimedia contents.",
 };
 
 export default function RootLayout({ children }) {

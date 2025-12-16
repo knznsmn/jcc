@@ -6,23 +6,25 @@ import Link from "next/link";
 export default function Header({ nav }) {
   return (
     <header className={styles.header}>
-      <Image
-        src="/brand/icon.png"
-        alt={`${contents.website.title} Logo`}
-        width={50}
-        height={50}
-      />
+      <Link href="/">
+          <Image
+            src="/brand/jcc.svg"
+            alt={contents.author.name}
+            width={40}
+            height={40}
+          />
+      </Link> 
 
       {nav === "avec" && (
-        <nav>
-          <ul>
-            {contents.navigation.map((item) => (
-              <li key={item.link}>
-                <Link href={item.link}>{item.label}</Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+      <nav>
+        <ul>
+          {contents.navigation.map((item) => (
+            <li key={item.link}>
+              <Link href={item.link}>{item.label}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
       )}
     </header>
   );

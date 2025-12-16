@@ -1,0 +1,42 @@
+.card {
+  width: 50%;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--neu-bg);
+  border-radius: var(--neu-radius);
+  box-shadow:
+    calc(var(--neu-depth) * -1)
+    calc(var(--neu-depth) * -1)
+    calc(var(--neu-depth) * 2)
+    var(--neu-light),
+    
+    var(--neu-depth)
+    var(--neu-depth)
+    calc(var(--neu-depth) * 2)
+    var(--neu-dark);
+}
+.card:hover {
+    transform: translateY(-.25rem);
+    box-shadow:
+      calc(var(--neu-depth) * -1.5)
+      calc(var(--neu-depth) * -1.5)
+      calc(var(--neu-depth) * 3)
+      var(--neu-light),
+      
+      calc(var(--neu-depth) * 1.5)
+      calc(var(--neu-depth) * 1.5)
+      calc(var(--neu-depth) * 3)
+      var(--neu-dark);
+}
+.card section {
+  display: flex;
+}
+.card i {
+  color: var(--hue-verre);
+  font-size: 2rem;
+  margin-right: .5rem;
+}
+.card a {
+  color: var(--hue-accen);
+  font-size: .85rem;
+}

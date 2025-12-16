@@ -1,7 +1,20 @@
-.page { padding: 1rem; }
-.post { max-width: 720px; margin: 0 auto; }
-.md { line-height: 1.7; }
-.signature { margin-top: 2rem; color: #777; }
+.page {
+  padding: 1rem;
+}
+.post {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.md {
+  line-height: 1.7;
+}
+.md hr {
+  margin-bottom: 1rem;
+}
+.signature {
+  margin-top: 2rem;
+  color: #777;
+}
 
 .md code {
 	background: var(--neu-light);
@@ -9,12 +22,13 @@
 	padding: 0.2rem 0.4rem;
 	border-radius: 4px;
 	border: 1px solid var(--neu-dark);
-	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+	font-family: var(--font-jetbrains-mono), monospace;
 }
 
 .md pre {
   background: var(--foreground);
   color: var(--background);
+  margin: .5rem 0 2rem;
   padding: 1rem;
   overflow: auto;
   border-radius: 6px;
@@ -28,6 +42,7 @@
 	color: inherit;
 	border: none;
 	padding: 0;
+  font-size: 0.9rem;
 }
 
 .copyButton {

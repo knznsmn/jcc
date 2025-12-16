@@ -1,0 +1,65 @@
+.masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--neu-bg);
+  display: block;
+}
+
+.item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px hsla(var(--neu-h), var(--neu-s), var(--neu-l), 0.3);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.item:hover .image {
+  transform: scale(1.05);
+}
+
+/* Portrait images (1:1.618) take more vertical space */
+.portrait {
+  grid-row: span 2;
+}
+
+/* Landscape images (1.618:1) take standard space */
+.landscape {
+  grid-row: span 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .masonry {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .portrait {
+    grid-row: span 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .masonry {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+  }
+}

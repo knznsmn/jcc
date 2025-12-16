@@ -1,0 +1,27 @@
+.toggle {
+    margin-left: auto;
+    width: 1.75rem;
+    height: 1.75rem;
+    gap: 0.35rem;
+    cursor: pointer;
+    align-items: center;
+    display: inline-flex;
+    border-radius: 999px;
+    justify-content: center;
+    padding: 0.45rem 0.8rem;
+    color: var(--foreground);
+    background: var(--neu-light);
+    border: 1px solid var(--neu-dark);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.toggle:hover {
+    background: var(--neu-lighter);
+    box-shadow: 0 0 8px var(--neu-lighter);
+    scale: 1.05;
+}
+.toggle i {
+    font-size: 1.5rem;
+}
+.toggle i:hover {
+    color: var(--hue-verre)
+}

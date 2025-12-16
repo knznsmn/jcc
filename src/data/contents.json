@@ -1,6 +1,6 @@
 {
 	"website": {
-		"title": "JCC",
+		"title": "JCC Creative Concepts",
 		"description": "'s digital concepts and multimedia projects.",
 		"tagline": "Design. Develop. Deploy.",
 		"footer": "All rights reserved."
@@ -35,43 +35,104 @@
 	},
 
 	"navigation": [
-		{ "label": "Home", "link": "/" },
-		{ "label": "Portfolio", "link": "/portfolio" },
-		{ "label": "Blog", "link": "/blog" },
-		{ "label": "Notes", "link": "/notes" }
-	],
+		{   "label": "Blog",
+            "link": "/blog"
+        },
+		{   "label": "Notes",
+            "link": "/notes"
+        },
+		{   "label": "Projects",
+            "link": "/projects"
+        },
+		{   "label": "Portfolio",
+            "link": "/portfolio"
+        }
+    ],
 
 	"projects": [
 
-    {   "title": "Yaban Restaurant",
-        "name": "yaban",
-        "logo": "/images/projects/yaban/logo.png",
-        "previewImage": "/images/projects/yaban.png",
-        "link": "/projects/yaban",
-        "description": "Japanese restaurant website redesign."
-    },
-    {   "title": "Maftuha",
-        "name": "maftuha",
-        "logo": "/images/projects/maftuha/logo.png",
-        "previewImage": "/images/projects/maftuha.png",
-        "link": "/projects/maftuha",
-        "description": "Personal library of digital books."
-    },
-    {   "title": "DERM",
-        "name": "derm",
-        "logo": "/images/projects/derm/logo.svg",
-        "previewImage": "/images/projects/derm.png",
-        "link": "/projects/derm",
-        "description": "Digitalized engineering reference manual."
-    },
-    {   "title": "Amha",
-        "name": "amha",
-        "logo": "/images/projects/amha/logo.png",
-        "previewImage": "/images/projects/amha.png",
-        "link": "/projects/amha",
-        "description": "Amha Mediterranean hotel website project."
-    }
+        {   "title": "Scripts",
+            "name": "code-close",
+            "logo": "/images/projects/scripts/logo.png",
+            "previewImage": "/images/projects/scripts.png",
+            "link": "/projects/scripts",
+            "description": "Scripts for everyday tasks."
+        },
+        {   "title": "Seuthee Thee",
+            "name": "quill",
+            "logo": "/images/projects/maftuha/logo.png",
+            "previewImage": "/images/projects/maftuha.png",
+            "link": "/projects/maftuha",
+            "description": "Personal library of digital books."
+        },
+        {   "title": "UI",
+            "name": "display",
+            "logo": "/images/projects/ui/logo.svg",
+            "previewImage": "/images/projects/ui.png",
+            "link": "/projects/ui",
+            "description": "HTML, CSS, and JavaScript."
+        },
+        {   "title": "Farming Notes",
+            "name": "leaf",
+            "logo": "/images/projects/farming/logo.png",
+            "previewImage": "/images/projects/farming.png",
+            "link": "/projects/farming",
+            "description": "A collection of farming notes."
+        }
 	],
+    "portfolio": [
+
+        {   "title": "Yaban Restaurant",
+            "name": "yaban",
+            "logo": "/images/projects/yaban/logo.png",
+            "previewImage": "/images/projects/yaban.png",
+            "link": "/projects/yaban",
+            "description": "Japanese restaurant website redesign."
+        },
+        {   "title": "Maftuha Press",
+            "name": "maftuha",
+            "logo": "/images/projects/maftuha/logo.png",
+            "previewImage": "/images/projects/maftuha.png",
+            "link": "/projects/maftuha",
+            "description": "Personal library of digital books."
+        },
+        {   "title": "FNÚA Fashion",
+            "name": "fnua",
+            "logo": "/images/projects/fnua/logo.svg",
+            "previewImage": "/images/projects/fnua.png",
+            "link": "/projects/fnua",
+            "description": "Digitalized engineering reference manual."
+        },
+        {   "title": "AMHA",
+            "name": "amha",
+            "logo": "/images/projects/amha/logo.png",
+            "previewImage": "/images/projects/amha.png",
+            "link": "/projects/amha",
+            "description": "Amha Mediterranean hotel website project."
+        }
+	],
+    "gallery": [
+        {   "src": "/images/gallery/001.png",
+            "link": "/project/signage",
+            "alt": "Signage Design",
+            "orientation": "landscape"
+        },
+        {   "src": "/images/gallery/003.png",
+            "link": "/project/signage",
+            "alt": "Signage Design",
+            "orientation": "portrait"
+        },
+        {   "src": "/images/gallery/004.png",
+            "link": "/project/signage",
+            "alt": "Signage Design",
+            "orientation": "portrait"
+        },
+        {   "src": "/images/gallery/002.png",
+            "link": "/project/signage",
+            "alt": "Signage Design",
+            "orientation": "landscape"
+        }
+    ],
     "notes": {
         "categories": ["tools", "webdev", "gamedev", "programming","design"],
         "tags": ["c", "java", "python", "javascript", "unix"]
