@@ -1,5 +1,5 @@
 ---
-title: "Hello, world !"
+title: "Hello, world!"
 date: "2025-12-14"
 excerpt: "An online repository of digital and philosophical concepts."
 ---

@@ -10,11 +10,9 @@
     text-transform: capitalize;
 }
 .list a::before {
-    content: "—";
+    font-family: 'Icons';
+    content: "\e909";
     margin: 0 0.5rem;
-}
-.list a::after {
-    content: ".";
 }
 .list .excerpt {
     font-style: italic;

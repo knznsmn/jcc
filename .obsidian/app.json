@@ -1,0 +1,14 @@
+{
+  "userIgnoreFilters": [
+    "node_modules/",
+    "public/",
+    "src/"
+  ],
+  "useMarkdownLinks": true,
+  "newFileLocation": "current",
+  "vimMode": true,
+  "useTab": false,
+  "tabSize": 2,
+  "showLineNumber": true,
+  "propertiesInDocument": "visible"
+}

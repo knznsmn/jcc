@@ -2,29 +2,21 @@
   padding: 1rem;
 }
 .post {
-  max-width: 720px;
-  margin: 0 auto;
+  width: 90%;
+  margin: 2rem auto;
+}
+.page hr {
+  margin-bottom: 3rem;
 }
 .md {
   line-height: 1.7;
 }
-.md hr {
-  margin-bottom: 1rem;
-}
-.signature {
-  margin-top: 2rem;
-  color: #777;
-}
-
 .md code {
-	background: var(--neu-light);
-	color: var(--foreground);
-	padding: 0.2rem 0.4rem;
+  padding: 0.2rem 0.4rem;
 	border-radius: 4px;
 	border: 1px solid var(--neu-dark);
 	font-family: var(--font-jetbrains-mono), monospace;
 }
-
 .md pre {
   background: var(--foreground);
   color: var(--background);
@@ -35,6 +27,7 @@
   border: 1px solid var(--neu-bg);
   box-shadow: 0 8px 16px hsla(var(--neu-h), var(--neu-s), var(--neu-l), 0.15);
   position: relative;
+  max-width: 660px;
 }
 
 .md pre code {
@@ -43,23 +36,4 @@
 	border: none;
 	padding: 0;
   font-size: 0.9rem;
-}
-
-.copyButton {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  background: var(--neu-light);
-  color: var(--foreground);
-  border: 1px solid var(--neu-dark);
-  border-radius: 4px;
-  padding: 0.4rem 0.5rem;
-  font-size: 0.75rem;
-  cursor: pointer;
-  opacity: 1;
-  transition: opacity 0.2s ease;
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-  z-index: 100;
 }

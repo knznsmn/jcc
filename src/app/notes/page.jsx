@@ -21,19 +21,8 @@ export default function Notes() {
             <Header nav="avec" />
             <article>
                 <h1 className={styles.title}>Notes</h1>
-                {categories.length > 0 && (
-                    <section className={styles.categories}>
-                        <h2 className={styles.sectionTitle}>Categories</h2>
-                        <ul className={styles.categoryList}>
-                            {categories.map((cat) => (
-                                <li key={cat} className={styles.categoryItem}>{cat}</li>
-                            ))}
-                        </ul>
-                    </section>
-                )}
 
                 <section>
-                    <h2 className={styles.sectionTitle}>All Notes</h2>
                     {categories.map((cat) => (
                         <div key={cat} className={styles.group}>
                             <h3 className={styles.groupTitle}>{cat}</h3>
@@ -69,6 +58,17 @@ export default function Notes() {
                         </div>
                     )}
                 </section>
+
+                {categories.length > 0 && (
+                <section className={styles.categories}>
+                    <h2 className={styles.sectionTitle}>Categories</h2>
+                    <ul className={styles.categoryList}>
+                        {categories.map((cat) => (
+                            <li key={cat} className={styles.categoryItem}>{cat}</li>
+                        ))}
+                    </ul>
+                </section>
+                )}
             </article>
             <Social />
         </main>

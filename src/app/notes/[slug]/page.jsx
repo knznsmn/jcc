@@ -3,8 +3,7 @@ import styles from "../notes.module.css";
 import mdStyles from "./md.module.css";
 import Social from "@/components/Social";
 import Header from "@/components/Header";
-import CodeBlockCopy from "@/components/Copy";
-import contents from "@/data/contents.json";
+import Copy from "@/components/Copy";
 
 export async function generateStaticParams() {
   const slugs = getNoteSlugs();
@@ -30,12 +29,9 @@ export default async function NotePage({ params }) {
           </section>
         )}
         <section className={mdStyles.md} dangerouslySetInnerHTML={{ __html: note.contentHtml }} />
-        <section className={mdStyles.signature}>
-          <p>&mdash; Notes by {contents.author.name}</p>
-        </section>
       </article>
       <Social />
-      <CodeBlockCopy />
+      <Copy />
     </main>
   );
 }
