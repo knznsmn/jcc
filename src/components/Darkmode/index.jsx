@@ -8,6 +8,12 @@ const THEME_KEY = "theme";
 export function Darkmode() {
     const [theme, setTheme] = useState("light");
 
+    const applyTheme = (mode) => {
+        const root = document.documentElement;
+        root.setAttribute("data-theme", mode);
+        localStorage.setItem(THEME_KEY, mode);
+    };
+
     useEffect(() => {
         const stored = typeof window !== "undefined" ? localStorage.getItem(THEME_KEY) : null;
         if (stored === "dark" || stored === "light") {
@@ -20,12 +26,6 @@ export function Darkmode() {
         applyTheme(initial);
         setTheme(initial);
     }, []);
-
-    const applyTheme = (mode) => {
-        const root = document.documentElement;
-        root.setAttribute("data-theme", mode);
-        localStorage.setItem(THEME_KEY, mode);
-    };
 
     const toggleTheme = () => {
         const next = theme === "dark" ? "light" : "dark";

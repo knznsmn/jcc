@@ -19,7 +19,7 @@ export default function Copy() {
         
         const button = document.createElement('button');
         button.setAttribute('data-copy-btn', 'true');
-        button.className = styles.copyButton;
+        button.className = styles.button;
         button.innerHTML = '<i class="icon-copy"></i>';
         button.type = 'button';
         
@@ -38,7 +38,7 @@ export default function Copy() {
           }
         });
         
-        pre.className += ` ${styles.codeBlock}`;
+        pre.className += ` ${styles.codeblock}`;
         pre.appendChild(button);
       });
     };

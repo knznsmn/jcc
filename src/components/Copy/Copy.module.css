@@ -1,4 +1,4 @@
-.copyButton {
+.button {
   position: absolute;
   top: 0.5rem;
   color: var(--background);
@@ -16,14 +16,14 @@
   opacity: 0;
 }
 
-.copyButton:hover {
+.button:hover {
   opacity: 0.8;
 }
 
-.codeBlock:hover .copyButton {
+.codeblock:hover .button {
   opacity: 1;
 }
 
-.codeBlock {
+.codeblock {
   position: relative;
 }
