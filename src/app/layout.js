@@ -20,7 +20,24 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html className={`${jetBrainsMono.variable} ${specialElite.variable}`} lang="en">
+    <html className={`${jetBrainsMono.variable} ${specialElite.variable}`} lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const stored = localStorage.getItem("theme");
+                if (stored === "dark" || stored === "light") {
+                  document.documentElement.setAttribute("data-theme", stored);
+                  return;
+                }
+                const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+                document.documentElement.setAttribute("data-theme", prefersDark ? "dark" : "light");
+              })();
+            `,
+          }}
+        />
+      </head>
       <body>
         {children}
       </body>

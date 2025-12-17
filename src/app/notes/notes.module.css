@@ -8,6 +8,7 @@
 }
 .categories {
     margin: 1.5rem 0;
+    border-top: 1px solid var(--hue-verre);
 }
 .categoryList {
     display: flex;
@@ -23,7 +24,7 @@
 .group {
     margin: 1rem 0;
 }
-.groupTitle {
+.grouptitle {
     font-size: 1rem;
     margin: .5rem 0;
 }

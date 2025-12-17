@@ -17,3 +17,14 @@
 .list .excerpt {
     font-style: italic;
 }
+
+@media (max-width: 798px) {
+    .list .excerpt {
+        display: none;
+    }
+}
+@media (max-width: 440px) {
+    .list li .date {
+        margin: 0;
+    }
+}

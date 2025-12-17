@@ -24,7 +24,10 @@ export default function Portfolio() {
                 </article>
                 ))}
             </section>
-            <Masonry items={contents.gallery || []} />
+            <section className={styles.works}>
+                <h1>Works</h1>
+                <Masonry items={contents.gallery || []} />
+            </section>
             <Social />
         </main>
         </>

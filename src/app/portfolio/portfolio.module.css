@@ -40,3 +40,17 @@
   color: var(--hue-accen);
   font-size: .85rem;
 }
+.works h1 {
+  padding-top: 2rem;
+  border-top: 1px solid var(--hue-verre);
+}
+@media (max-width: 798px) {
+  .card {
+    width: 75%;
+  }
+}
+@media (max-width: 660px) {
+  .card {
+    width: 100%;
+  }
+}

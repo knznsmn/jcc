@@ -289,6 +289,9 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
+.page {
+  margin: 2rem;
+}
 
 .darkmode-toggle:hover {
   transform: translateY(-1px);
@@ -318,5 +321,10 @@ main {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+@media (max-width: 440px) {
+  .page {
+    margin: 1rem 0;
   }
 }

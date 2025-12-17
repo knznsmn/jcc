@@ -58,12 +58,12 @@
             "link": "/projects/scripts",
             "description": "Scripts for everyday tasks."
         },
-        {   "title": "Seuthee Thee",
+        {   "title": "Papers",
             "name": "quill",
-            "logo": "/images/projects/maftuha/logo.png",
-            "previewImage": "/images/projects/maftuha.png",
-            "link": "/projects/maftuha",
-            "description": "Personal library of digital books."
+            "logo": "/images/projects/quill/logo.png",
+            "previewImage": "/images/projects/quill.png",
+            "link": "/projects/quill",
+            "description": "Collection of nuggets of knowledge."
         },
         {   "title": "UI",
             "name": "display",

@@ -40,3 +40,13 @@
   color: var(--hue-accen);
   font-size: .85rem;
 }
+@media (max-width: 798px) {
+  .card {
+    width: 75%;
+  }
+}
+@media (max-width: 660px) {
+  .card {
+    width: 100%;
+  }
+}

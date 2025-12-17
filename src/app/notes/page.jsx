@@ -17,8 +17,9 @@ export default function Notes() {
     );
 
     return (
-        <main className="page">
+        <>
             <Header nav="avec" />
+        <main className="page">
             <article>
                 <h1 className={styles.title}>Notes</h1>
 
@@ -44,7 +45,7 @@ export default function Notes() {
 
                     {uncategorized.length > 0 && (
                         <div className={styles.group}>
-                            <h3 className={styles.groupTitle}>Others</h3>
+                            <h3 className={styles.grouptitle}>Others</h3>
                             <ul className={styles.list}>
                                 {uncategorized.map((note) => (
                                     <li key={note.slug} className={styles.item}>
@@ -60,7 +61,7 @@ export default function Notes() {
                 </section>
 
                 {categories.length > 0 && (
-                <section className={styles.categories}>
+                    <section className={styles.categories}>
                     <h2 className={styles.sectionTitle}>Categories</h2>
                     <ul className={styles.categoryList}>
                         {categories.map((cat) => (
@@ -72,5 +73,6 @@ export default function Notes() {
             </article>
             <Social />
         </main>
+        </>
     );
 }
