@@ -1,19 +1,7 @@
 ---
-title: Killing A Running Server
-date: 2025-12-15
-category: webdev
-tags: [unix]
-excerpt: How to kill a running local server.
+title: 
+date: 2026-01-03
+category: programming
+tags: [c]
+excerpt: 
 ---
-
-To kill the running server:
-
-```bash
-sudo lsof -wni tcp:4000
-```
-
-This command outputs some text, including the process' PID.
-
-```bash
-sudo kill -9 PID
-```
