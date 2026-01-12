@@ -6,28 +6,38 @@ tags: [sdl3]
 excerpt: 
 ---
 
-To install SDL3:
+To install SDL3, clone the source:
 
 ```bash
-brew install sdl3
+git clone https://github.com/libsdl-org/SDL.git vendored/SDL
 ```
 
-To verify:
+Create the file `cmakeLists.txt`:
 
 ```bash
-brew list sdl3
+cmake_minimum_required(VERSION 3.16)
+project(hello)
+
+# set the output directory for built objects.
+# This makes sure that the dynamic library goes into the build directory automatically.
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/$<CONFIGURATION>")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/$<CONFIGURATION>")
+
+# This assumes the SDL source is available in vendored/SDL
+add_subdirectory(vendored/SDL EXCLUDE_FROM_ALL)
+
+# Create your game executable target as usual
+add_executable(hello WIN32 hello.c)
+
+# Link to the actual SDL3 library.
+target_link_libraries(hello PRIVATE SDL3::SDL3)
 ```
 
-To verify the headers exist:
+Configure and build:
 
 ```bash
-ls $(brew --prefix)/include/SDL3/SDL.h
-```
-
-To verify that `pkg-config` can find SDL3:
-
-```bash
-pkg-config --modversion sdl3
+cmake -S . -B build
+cmake --build build
 ```
 
 To create a window:
