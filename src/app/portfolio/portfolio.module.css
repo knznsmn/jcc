@@ -1,56 +1,48 @@
 .card {
-  width: 50%;
+.card {
+  width: min(760px, 100%);
   margin: 1rem 0;
-  padding: 1rem;
-  background: var(--neu-bg);
-  border-radius: var(--neu-radius);
-  box-shadow:
-    calc(var(--neu-depth) * -1)
-    calc(var(--neu-depth) * -1)
-    calc(var(--neu-depth) * 2)
-    var(--neu-light),
-    
-    var(--neu-depth)
-    var(--neu-depth)
-    calc(var(--neu-depth) * 2)
-    var(--neu-dark);
+  padding: 1.25rem 1.5rem;
+  background: var(--surface);
+  border-radius: var(--radius-2);
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 32px var(--shadow-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
+
 .card:hover {
-    transform: translateY(-.25rem);
-    box-shadow:
-      calc(var(--neu-depth) * -1.5)
-      calc(var(--neu-depth) * -1.5)
-      calc(var(--neu-depth) * 3)
-      var(--neu-light),
-      
-      calc(var(--neu-depth) * 1.5)
-      calc(var(--neu-depth) * 1.5)
-      calc(var(--neu-depth) * 3)
-      var(--neu-dark);
+  transform: translateY(-4px);
+  box-shadow: 0 24px 40px var(--shadow-color);
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--border) 65%);
 }
+
 .card section {
   display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
+
 .card i {
-  color: var(--hue-verre);
+  color: var(--accent);
   font-size: 2rem;
-  margin-right: .5rem;
 }
+
 .card a {
-  color: var(--hue-accen);
-  font-size: .85rem;
+  color: var(--accent-2);
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  align-self: flex-start;
 }
+
+.card a:hover {
+  border-color: currentColor;
+}
+
 .works h1 {
   padding-top: 2rem;
-  border-top: 1px solid var(--hue-verre);
-}
-@media (max-width: 798px) {
-  .card {
-    width: 75%;
-  }
-}
-@media (max-width: 660px) {
-  .card {
-    width: 100%;
-  }
+  border-top: 1px solid var(--border);
 }

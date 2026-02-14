@@ -28,7 +28,7 @@ export default async function NotePage({ params }) {
             <hr />
           </section>
         )}
-        <section className={mdStyles.md} dangerouslySetInnerHTML={{ __html: note.contentHtml }} />
+        <section data-md-content className={mdStyles.md} dangerouslySetInnerHTML={{ __html: note.contentHtml }} />
       </article>
       <Social />
       <Copy />

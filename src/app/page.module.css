@@ -1,8 +1,35 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .main nav {
   font-family: var(--font-special-elite);
-  font-size: 1.75rem;
+  font-size: clamp(1.3rem, 2.4vw, 1.85rem);
 }
+
 .main nav ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.main nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--surface) 80%, transparent);
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 24px var(--shadow-color);
+}
+
+.main nav a:hover {
+  background: var(--surface-strong);
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--border) 65%);
 }
 

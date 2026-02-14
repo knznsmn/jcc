@@ -2,22 +2,23 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
-  padding: 1rem;
+  padding: 1rem 0;
   width: 100%;
 }
 
 .item {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: var(--radius-1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: var(--neu-bg);
+  background: var(--surface-strong);
+  border: 1px solid var(--border);
   display: block;
 }
 
 .item:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px hsla(var(--neu-h), var(--neu-s), var(--neu-l), 0.3);
+  box-shadow: 0 18px 30px var(--shadow-color);
 }
 
 .imageWrapper {

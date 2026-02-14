@@ -1,7 +1,27 @@
 .social {
   margin-left: auto;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
 .social i {
   padding: 0 0.25rem;
-  font-size: rem;
+  font-size: 1.1rem;
+}
+.social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 20px var(--shadow-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+.social a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 26px var(--shadow-color);
+  color: var(--accent);
 }

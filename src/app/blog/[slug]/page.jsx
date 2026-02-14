@@ -24,7 +24,7 @@ export default async function PostPage({ params }) {
         {post.date && <section className={styles.date}>{formatDate(post.date)}
           <hr />
         </section>}
-        <section className={mdStyles.md} dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+        <section data-md-content className={mdStyles.md} dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
       <section className={mdStyles.signature}>
         <p>&mdash; Written by {contents.author.name}</p>
       </section>

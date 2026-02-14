@@ -1,14 +1,15 @@
 .title {
-    font-size: 2rem;
+    font-size: clamp(2rem, 4vw, 2.6rem);
     margin-bottom: 1rem;
 }
 .sectionTitle {
     font-size: 1.2rem;
-    margin: 1rem 0;
+    margin: 1.2rem 0 0.75rem;
 }
 .categories {
     margin: 1.5rem 0;
-    border-top: 1px solid var(--hue-verre);
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
 }
 .categoryList {
     display: flex;
@@ -18,34 +19,57 @@
     padding: 0;
 }
 .categoryItem {
-    border-radius: .4rem;
-    padding: .25rem .6rem;
+    border-radius: var(--radius-pill);
+    padding: 0.25rem 0.7rem;
+    background: var(--surface-strong);
+    border: 1px solid var(--border);
 }
 .group {
     margin: 1rem 0;
 }
-.grouptitle {
+.groupTitle {
     font-size: 1rem;
-    margin: .5rem 0;
+    margin: 0.5rem 0 0.75rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
 }
 .list {
     list-style: none;
     padding: 0;
+    display: grid;
+    gap: 0.5rem;
 }
 .item {
-    margin: .25rem 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 0.75rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-1);
+    box-shadow: 0 10px 20px var(--shadow-color);
 }
 .item::before {
-    font-family: 'Icons';
+    font-family: "Icons";
     content: "\eaac";
-    margin: 0 1rem;
+    margin: 0 0.5rem 0 0;
+    color: var(--accent);
 }
 .tags {
-    margin-left: .5rem;
-    font-size: .9rem;
-    opacity: .7;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    opacity: 0.85;
+    padding: 0.15rem 0.45rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border);
+    background: color-mix(in srgb, var(--surface-strong) 70%, transparent);
 }
 .empty {
+    color: var(--muted);
+    font-style: italic;
 }
 .meta {
     font-size: .9rem;

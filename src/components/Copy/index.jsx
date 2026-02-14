@@ -7,8 +7,7 @@ export default function Copy() {
   useEffect(() => {
     const addCopyButtons = () => {
       // Select all pre elements and add copyable class + button
-      const preElements = document.querySelectorAll('section[class*="__md"] pre');
-      console.log('Found pre elements:', preElements.length);
+      const preElements = document.querySelectorAll('[data-md-content] pre');
       
       preElements.forEach((pre) => {
         // Add class to pre element
